@@ -1,0 +1,58 @@
+<html>
+
+
+<canvas id="canvas" width="300" height="300">
+         This text is displayed if your browser 
+         does not support HTML5 Canvas.
+        </canvas>
+		
+		
+		
+<script>
+
+var dx = 10;
+var dy = 10;
+var r = 20;
+var width = 300;
+var height = 300;
+
+
+function myRect(x,y,w,h,c){
+
+ ctx.fillStyle=c;
+ ctx.fillRect(x,y,w,h);
+
+ ctx.stroke();
+}
+
+
+
+function clear() {
+  ctx.clearRect(0, 0, width, height);
+}
+
+function init() {
+  canvas = document.getElementById("canvas");
+  ctx = canvas.getContext("2d");
+  return setInterval(draw, 20);
+}
+
+
+function draw() {
+
+ clear();
+ 
+ var c = "#000080";
+  myRect(50,50+dy,50,250-dy,c);
+ 
+ var c1 = "#808080";
+ myRect(50+dx, 50,50+dx,50 ,c1)
+
+  dx += 10;
+  dy += 10;
+  
+}
+
+
+init();
+</script>
