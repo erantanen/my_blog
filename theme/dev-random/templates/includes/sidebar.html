@@ -1,0 +1,43 @@
+    <aside class="page-sidebar">
+      <nav class="widget">
+      <h3>Site</h3>
+        <ul>
+          <li><a href="{{ SITEURL }}/index.html">Accueil</a></li>
+          <li><a href="{{ SITEURL }}/archives.html">Archives</a></li>
+          <li><a href="{{ SITEURL }}/about.html">A Propos</a></li>
+        {% if MENUITEMS %}
+          {% for name, uri in MENUITEMS %}
+          <li><a href="{{ uri|format(SITEURL)|e}}">{{ name }}</a></li>
+          {% endfor %}
+        {% endif %}
+        {% if DISPLAY_PAGES_ON_MENU %}
+          {% for p in PAGES %}
+          <li><a href="{{ SITEURL}}/{{ p.url|e }}"{% if p == page %} class="active"{% endif %}>{{ p.title }}</a></li>
+          {% endfor %}
+        {% endif %}
+        </ul>
+      </nav>
+
+     {% if categories %}
+      <nav class="widget">
+        <h3>Catégories</h3>
+        <ul>
+        {% for cat, null in categories %}
+          <li><a href="{{ SITEURL }}/{{ cat.url|e }}">{{ cat }}</a></li>
+        {% endfor %}
+        </ul>
+      </nav>
+      {% endif %}
+
+     {% if LINKS %}
+      <nav class="widget">
+        <h3>Liens</h3>
+        <ul>
+        {% for name, url in LINKS %}
+        <li><a href="{{ url }}">{{ name }}</a></li>
+        {% endfor %}
+        </ul>
+      </nav>
+      {% endif %}
+
+</aside>

@@ -18,13 +18,16 @@ html:
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
+#######
+# webserver starts on
+# http://127.0.0.1:8000
 
 devserver:
-ifdef PORT
-	$(BASEDIR)/develop_server.sh restart $(PORT)
-else
-	$(BASEDIR)/develop_server.sh restart
-endif
+    ifdef PORT
+	    $(BASEDIR)/develop_server.sh restart $(PORT)
+    else
+	    $(BASEDIR)/develop_server.sh restart
+    endif
 
 ####################################
 # building all content under putput
