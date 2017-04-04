@@ -7,7 +7,11 @@ PY-Prelim
 :status: published
 
 
-=====
+.. raw:: html
+
+    <embed>
+       <br>
+    </embed>
 
 **Getting setup:**
     A couple of things before we begin to code.
@@ -41,5 +45,12 @@ A Repository
 A Project area
     https://projecteuler.net/
 
+.. raw:: html
 
-`Lesson 1 <lesson_1.html>`__
+    <embed>
+       <br>
+    </embed>
+
+`Moving on to    Lesson 1 <lesson_1.html>`__
+
+

@@ -10,5 +10,6 @@ PY-Into 1
 
 
 All programing is based on some type of decision, these decisions are called conditionals. The first conditional
-we will look at is the "if" statment.
+we will look at is the "if" statement.
+
 
