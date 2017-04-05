@@ -6,10 +6,37 @@ PY-Into 1
 :slug: lesson_1
 :status: published
 
+.. raw:: html
+
+    <embed>
+       <br>
+    </embed>
+
+python
+......
+
+Why use python?
+
+| it's is open source
+| it was created by Guido Van Rossum
+
+| It has a ton of modules
+| It was some crazy software built with it such as `blender <https://www.blender.org/>`_
+| or `flask <http://flask.pocoo.org/>`_
+
+| and for more background its wiki is @ `Python <https://en.wikipedia.org/wiki/Python_(programming_language)>`_
 
 
 
-All programing is based on some type of decision, these decisions are called conditionals. The first conditional
-we will look at is the "if" statement.
 
+
+.. raw:: html
+
+    <embed>
+       <br>
+    </embed>
+
+`Moving forward to Lesson 2 <lesson_2.html>`__
+
+`Moving back to Prelim <prelim.html>`__
 
