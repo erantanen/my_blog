@@ -2,7 +2,7 @@ WordPress to Pelican
 ####################
 :date: 2017-02-05 18:40
 :author:  Ed Rantanen
-:category: Web Testing
+:category: AdminStuff
 :slug: Pelican
 :status: published
 
