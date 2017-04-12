@@ -32,6 +32,11 @@ box = bag_full_of_candy * 5
        | x = 2
        | y = 4
 
+
+data structures
+...............
+
+
 tuple : position =(x,y)
 
 list  :

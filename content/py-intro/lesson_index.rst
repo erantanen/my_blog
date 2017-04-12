@@ -19,7 +19,7 @@ A quick index
 
 
  `Prelim <prelim.html>`__
-        | Items we need to get done first, an discussed
+        | Items we need to get done first, and discussed
 
 =====
 
@@ -34,7 +34,7 @@ A quick index
 =====
 
  `Lesson 3 <lesson_3.html>`__
-        | strings
+        | strings and reading/writing to file
 
 =====
 

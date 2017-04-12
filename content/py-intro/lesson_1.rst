@@ -83,7 +83,7 @@ From a terminal windows type "``Python``"
 
 | blah = 1.2
 
-newblah = blah * $
+newblah = blah * 4
     Result of newblah?
 
 intblah = int(newblah)
