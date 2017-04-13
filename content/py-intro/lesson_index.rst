@@ -49,4 +49,4 @@ A quick index
 =====
 
  `Lesson 6 <lesson_6.html>`__
-        | excel intro
+        | functions and excel intro

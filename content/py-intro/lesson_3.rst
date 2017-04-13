@@ -25,10 +25,19 @@ Python has some really interesting tools to work with strings
     blah = "Beam Me Up, Scotty"
     blah[::-1]
 
-
+| The -1 syntax is quite interesting, try it in the python shell.
 | What is the result?
-| How can we do a quick test?
+| Doing a quick test what other variations can you see?
 
+- "\n" when working with strings sometimes you might want a new line
+- "\t" or maybe a tab.
+
+The "\\" is called an escape character. What other escape sequences are there?
+
+
+
+
+=====
 
 Now that we have a string how do we write that string to a file? Or how do we read from a file? Well ...
 
@@ -39,8 +48,7 @@ Now that we have a string how do we write that string to a file? Or how do we re
     FH.close
 
 
-
-
+A different way to open a file, this one does not require a close.
 
 
 .. code-block:: c
@@ -51,6 +59,22 @@ Now that we have a string how do we write that string to a file? Or how do we re
 
 
 
-I put an error in the code do you see it? Hint writes only string type. How would we fix this?
+| I put an error in the code do you see it?
+| Hint "write" only utilizes string type unless its called out.
+| How would we fix this?
+
+ `example: a quick fix?  <./code_snips/file_open.py>`__
+
+Now reading and appending are similar to writing, but we change out the "w" with an "r" or "a" now if we want to
+read something it will have to be captured by a variable.
+
+.. code-block:: c
+
+    FH = open("blah.txt", "r")
+    file_input = FH.read()
+    FH.close
 
 
+Once we have the variable file_input with some data what should we do with it now?
+
+| Test this out with the python shell!

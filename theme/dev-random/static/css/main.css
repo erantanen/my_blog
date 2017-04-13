@@ -16,6 +16,12 @@ body {
     letter-spacing: .1em;
 }
 
+
+hr {
+  border-top: 1px dotted #8c8b8b;
+  width: 70%;
+}
+
 h1, h2, h3,
 h4, h5, h6 {
     color: #333333;
