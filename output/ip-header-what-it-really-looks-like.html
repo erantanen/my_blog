@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+    <title>IP Header, what it really looks like. — Nyble a Day</title>
+    <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+    <link rel="shortcut icon" type="text/css" href="/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml"
+                           title="Nyble a Day — Flux Atom"
+                           href="/" /> 
+    <!--[if lte IE 8]><script src="/theme/js/html5shiv.js"></script><![endif]-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+
+    <meta name="author"   content="Ed Rantanen" />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-head">
+        <h1>
+          <a href="/index.html">Nyble a Day</a>
+        </h1>
+      </header>
+
+      <div class="page-content">
+     <article class="post content">
+      <header class="post-header">
+        <time datetime="2012-10-04T15:57:00+02:00" pubdate="pubdate">
+          Thu 04 October 2012
+        </time>
+        <h1>
+          <a rel="bookmark"
+             href="/ip-header-what-it-really-looks-like.html"
+             title="Lien permanent vers «IP Header, what it really looks like.»">
+             IP Header, what it really looks like.
+          </a>
+        </h1>
+        <div class="meta">
+            Dans «<a href="/category/network.html">network</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a>
+        </div>
+      </header>
+      <div class="post-content"> 
+        <div class="line-block">
+<div class="line">Started the great experiment on promiscuous mode programing in &quot;c&quot;.</div>
+<div class="line">(bit fragmented in thought)</div>
+</div>
+<p>I wasn't sure how working on a Mac inside a VirtualBox vm&nbsp; running
+Ubuntu might work out, but so far things have been rolling along. As
+this is giving me a better understanding of how the IP header fits
+together as a structure. This is amazing since it is a&nbsp; structure from
+the early 80's and still widely used across the network.</p>
+<p>The first thing,</p>
+<p>&nbsp; Build the socket.</p>
+<pre class="literal-block">
+sock_raw = socket(AF_INET , SOCK_RAW, IPPROTO_TCP);
+</pre>
+<p>&nbsp; Read from socket.</p>
+<pre class="literal-block">
+data_size = recvfrom(sock_raw , buffer , 65536 , 0 , &amp;saddr , &amp;saddr_size);
+</pre>
+<p>&nbsp; I did a simple print to see some results.</p>
+<div class="line-block">
+<div class="line">&nbsp;void Print_Info(unsigned char* data , int d_length)</div>
+<div class="line">{</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;int incr;</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp; //data is the buffer from recvfrom</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(incr = 0; incr &lt; d_length ; incr+=2){</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot; %02X%02X &quot;, data[incr], data[incr+1]);</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</div>
+</div>
+<div class="line-block">
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;&nbsp; n&quot;);</div>
+<div class="line">}</div>
+</div>
+<div class="line-block">
+<div class="line">Results</div>
+<div class="line">4500 002C 0C9B 0000 4006 E39C CC5D B228 0A00 020F
+4500 002C 0C9E 0000 4006 EA96 4272 3517 0A00 020F
+4500 002C 0C9F 0000 4006 F659 ADDF BDE5 0A00 020F</div>
+</div>
+<p>And doing this I can see a repition of data, so this made me go and
+acutully lookup the RFC for IP. The first one to look at is RFC 791 and
+here we can begin to understand the break down of the header. Now the
+hard part is to start breaking down the groupings.</p>
+<p>4=Ver, 5=IHL, 00=ToS, 002C=TL, 0C9B=ID,&nbsp; 0=Flags, 000=Frag Off,&nbsp; 40=TTL,
+06=Prot, EA96=Hdr C_Sum,&nbsp; 42723517 = Source Address,&nbsp; 0A00 020f =
+Destination Address</p>
+<pre class="literal-block">
+ 0                   1                   2                   3
+ 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|Version|  IHL  |Type of Service|          Total Length         |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|         Identification        |Flags|      Fragment Offset    |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|  Time to Live |    Protocol   |         Header Checksum       |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                       Source Address                          |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                    Destination Address                        |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                    Options                    |    Padding    |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+</pre>
+<div class="line-block">
+<div class="line">-------------------------------------------------------------------------------------------------------------------------</div>
+<div class="line">This is very short but this is also a continuing experiment, as such
+next step is to breakdown the address into a usable format.</div>
+</div>
+
+      </div>
+      <footer class="post-footer">
+        <div class="meta">
+            Posté dans «<a href="/category/network.html">network</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a><br />
+            Mots-clés:         </div>
+      </footer>
+    </article>
+      </div>
+    <aside class="page-sidebar">
+      <nav class="widget">
+      <h3>Site</h3>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/archives.html">Archives</a></li>
+          <li><a href="/about.html">A Propos</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="/category/adminstuff.html">AdminStuff</a></li>
+          <li><a href="/category/coding.html">coding</a></li>
+          <li><a href="/category/greek.html">greek</a></li>
+          <li><a href="/category/javascript.html">javascript</a></li>
+          <li><a href="/category/network.html">network</a></li>
+          <li><a href="/category/py-intro.html">py-intro</a></li>
+          <li><a href="/category/web-testing.html">web testing</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Liens</h3>
+        <ul>
+        <li><a href="http://getpelican.com/">Pelican</a></li>
+        <li><a href="http://python.org/">Python.org</a></li>
+        <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+        <li><a href="#">You can modify those links in your config file</a></li>
+        </ul>
+      </nav>
+
+</aside> 
+
+      <footer class="page-footer">
+        <p> Powered by <a href="http://pelican.readthedocs.org">Pelican</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

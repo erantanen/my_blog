@@ -63,12 +63,14 @@ dictionary :
 conditionals
 ............
 
-
-All programing is based on some type of decision, these decisions are called conditionals.
-    The first conditional we will look at is the "if" statement.
-
+Decision making, the "If" statement, it is based on some type of boolean logic or algebra.
+What is Boolean algebra?
 
 
+`Boolean algebra is the branch of algebra in which the values of the variables are the
+truth values true and false, usually denoted 1 and 0 respectively.`
+
+from `Boolean algebra wiki <https://en.wikipedia.org/wiki/Boolean_algebra>`__
 
 
 

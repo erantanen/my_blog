@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+    <title>javascript circle — Nyble a Day</title>
+    <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+    <link rel="shortcut icon" type="text/css" href="/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml"
+                           title="Nyble a Day — Flux Atom"
+                           href="/" /> 
+    <!--[if lte IE 8]><script src="/theme/js/html5shiv.js"></script><![endif]-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+
+    <meta name="author"   content="Ed Rantanen" />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-head">
+        <h1>
+          <a href="/index.html">Nyble a Day</a>
+        </h1>
+      </header>
+
+      <div class="page-content">
+     <article class="post content">
+      <header class="post-header">
+        <time datetime="2014-05-17T13:10:00+02:00" pubdate="pubdate">
+          Sat 17 May 2014
+        </time>
+        <h1>
+          <a rel="bookmark"
+             href="/javascript-circle.html"
+             title="Lien permanent vers «javascript circle»">
+             javascript circle
+          </a>
+        </h1>
+        <div class="meta">
+            Dans «<a href="/category/greek.html">greek</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a>
+        </div>
+      </header>
+      <div class="post-content"> 
+        <p>I have been reading through a couple of books by, <a class="reference external" href="http://en.wikipedia.org/wiki/T._L._Heath">Sir Thomas L.
+Heath</a> on Greek
+Mathematics. And had an idea that it might be fun to see if I could get
+some working geometric shapes going to represent several of the
+theorems.</p>
+<p>One theorem of interest is by
+<a class="reference external" href="http://en.wikipedia.org/wiki/Thales%27_theorem">Thales</a> an inscribed
+right angle inside of a circle.</p>
+<p>So how do we make a circle in javascript?</p>
+<div class="line-block">
+<div class="line">This is a very basic script(no functions), we build a container which
+is our canvas then point that to an id on the page.</div>
+<div class="line">I have broken out the x&amp;y coordinates and a radius so we can use them
+in calculations at a later date. If we wanted a simple arc, then we
+can adjust the start and finish of the path.</div>
+</div>
+<div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="nx">canvas</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&quot;myCanvas&quot;</span>
+ <span class="nx">width</span><span class="o">=</span><span class="s2">&quot;300&quot;</span>
+ <span class="nx">height</span><span class="o">=</span><span class="s2">&quot;300&quot;</span>
+ <span class="nx">solid</span> <span class="err">#</span><span class="nx">d3d3d3</span><span class="p">;</span><span class="s2">&quot;&gt;</span>
+<span class="s2"> Your browser does not support the canvas tag.</span>
+<span class="s2"> &lt;/canvas&gt;&lt;/p&gt;</span>
+
+<span class="s2"> var c=document.getElementById(&quot;</span><span class="nx">myCanvas</span><span class="s2">&quot;);</span>
+<span class="s2"> var ctx=c.getContext(&quot;</span><span class="mi">2</span><span class="nx">d</span><span class="err">&quot;</span><span class="p">);</span>
+ <span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+ <span class="c1">//circle</span>
+ <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+ <span class="kd">var</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+ <span class="kd">var</span> <span class="nx">r</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+ <span class="kd">var</span> <span class="nx">start</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+ <span class="kd">var</span> <span class="nx">finish</span> <span class="o">=</span> <span class="mi">2</span><span class="err">\</span><span class="o">*</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">;</span>
+ <span class="nx">ctx</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">,</span><span class="nx">r</span><span class="p">,</span><span class="nx">start</span><span class="p">,</span> <span class="nx">finish</span><span class="p">);</span>
+ <span class="nx">ctx</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
+</pre></div>
+<p>To keep this post small and to the point I am not going to add anything
+else, but the next phase will be to bisect the circle. This will be a
+horizontal line, and using the x&amp;y with the radius can you see how this
+might be done?</p>
+
+      </div>
+      <footer class="post-footer">
+        <div class="meta">
+            Posté dans «<a href="/category/greek.html">greek</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a><br />
+            Mots-clés:         </div>
+      </footer>
+    </article>
+      </div>
+    <aside class="page-sidebar">
+      <nav class="widget">
+      <h3>Site</h3>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/archives.html">Archives</a></li>
+          <li><a href="/about.html">A Propos</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="/category/adminstuff.html">AdminStuff</a></li>
+          <li><a href="/category/coding.html">coding</a></li>
+          <li><a href="/category/greek.html">greek</a></li>
+          <li><a href="/category/javascript.html">javascript</a></li>
+          <li><a href="/category/network.html">network</a></li>
+          <li><a href="/category/py-intro.html">py-intro</a></li>
+          <li><a href="/category/web-testing.html">web testing</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Liens</h3>
+        <ul>
+        <li><a href="http://getpelican.com/">Pelican</a></li>
+        <li><a href="http://python.org/">Python.org</a></li>
+        <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+        <li><a href="#">You can modify those links in your config file</a></li>
+        </ul>
+      </nav>
+
+</aside> 
+
+      <footer class="page-footer">
+        <p> Powered by <a href="http://pelican.readthedocs.org">Pelican</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

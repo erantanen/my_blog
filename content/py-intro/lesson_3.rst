@@ -23,11 +23,39 @@ Python has some really interesting tools to work with strings
 .. code-block:: c
 
     blah = "Beam Me Up, Scotty"
+    blah[0]
+    blah[:3]
+    blah[:-2]
     blah[::-1]
 
 | The -1 syntax is quite interesting, try it in the python shell.
 | What is the result?
 | Doing a quick test what other variations can you see?
+
+
+When you have more than one string or word you want to put together then you cat (concatenation) them  like this.
+
+.. code-block:: c
+
+    b = "hello"
+    c = "world"
+    result = b + C
+
+    result = "hello" + "world"
+
+
+
+- You can not cat different types like str and int
+- Perform a cast on one or other
+
+.. code-block:: c
+
+    b = 1
+    c = " dog"
+    result = str(b) + C
+
+    result = str(1) + " dog\n"
+    print(result)
 
 - "\n" when working with strings sometimes you might want a new line
 - "\t" or maybe a tab.
@@ -78,3 +106,8 @@ read something it will have to be captured by a variable.
 Once we have the variable file_input with some data what should we do with it now?
 
 | Test this out with the python shell!
+
+`Moving forward to Lesson 4 <lesson_4.html>`__
+
+`Moving back to Lesson 2 <lesson_2.html>`__
+

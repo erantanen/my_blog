@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+    <title>Flask: a mini web front end — Nyble a Day</title>
+    <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+    <link rel="shortcut icon" type="text/css" href="/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml"
+                           title="Nyble a Day — Flux Atom"
+                           href="/" /> 
+    <!--[if lte IE 8]><script src="/theme/js/html5shiv.js"></script><![endif]-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+
+    <meta name="author"   content="Ed Rantanen" />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-head">
+        <h1>
+          <a href="/index.html">Nyble a Day</a>
+        </h1>
+      </header>
+
+      <div class="page-content">
+     <article class="post content">
+      <header class="post-header">
+        <time datetime="2014-08-05T02:06:00+02:00" pubdate="pubdate">
+          Tue 05 August 2014
+        </time>
+        <h1>
+          <a rel="bookmark"
+             href="/flask-a-mini-web-front-end.html"
+             title="Lien permanent vers «Flask: a mini web front end»">
+             Flask: a mini web front end
+          </a>
+        </h1>
+        <div class="meta">
+            Dans «<a href="/category/web-testing.html">web testing</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a>
+        </div>
+      </header>
+      <div class="post-content"> 
+        <p>I started to work on a project that needed to offer up a couple of data
+structures in a json format in a very simple method. This is part of
+mechanism using <a class="reference external" href="http://visjs.org/">vis.js</a> inside of <a class="reference external" href="http://trac.edgewall.org/wiki/TracWiki">trac's
+wiki</a>. With a bit of reading
+installing vis.js into trac wasn't to difficult, and it works pretty
+good to boot!</p>
+<div class="line-block">
+<div class="line">So the next phase is to get <a class="reference external" href="http://flask.pocoo.org/">Flask</a>
+working. First a couple of steps that are pretty straight forward
+depending on your os. I did the initial build in Ubuntu, but have also
+done it in OS X as well.</div>
+<div class="line">If you don't have python get it. Then a quick couple of steps after
+that.</div>
+<div class="line"><tt class="docutils literal">sudo easy_install pip pip install flask pip install <span class="pre">flask-cors</span></tt></div>
+</div>
+<div class="line-block">
+<div class="line">&quot;easy_install&quot; is part of python's setuptool mechanism.</div>
+<div class="line">&quot;pip&quot; is a python package manager of sorts.</div>
+<div class="line">&quot;cors&quot; is for Cross Origin Resource Sharing (more on that later)</div>
+</div>
+<div class="line-block">
+<div class="line">Once these are installed, open up a text editor and type/paste in a
+&quot;hello world&quot;</div>
+<div class="line"><tt class="docutils literal">from flask import Flask app = Flask(__name__) <span class="pre">&#64;app.route(&quot;/&quot;)</span> def <span class="pre">hello():</span>&nbsp;&nbsp;&nbsp;&nbsp; return &quot;Hello World!&quot; if __name__ == &quot;__main__&quot;:&nbsp;&nbsp;&nbsp;&nbsp; app.run()</tt></div>
+<div class="line">Save the file as hello.py and on the command line when you put it
+together you get.</div>
+</div>
+<div class="line-block">
+<div class="line">$ python hello.py</div>
+<div class="line">* Running on <a class="reference external" href="http://127.0.0.1:5000/">http://127.0.0.1:5000/</a></div>
+<div class="line">127.0.0.1 - - [04/Aug/2014 21:49:35] &quot;GET / HTTP/1.1&quot; 200 -</div>
+</div>
+<div class="line-block">
+<div class="line">Open up a browser enter in either 127.0.0.1:5000 or localhost:5000</div>
+<div class="line">The address:port are default.</div>
+</div>
+<div class="line-block">
+<div class="line">By changing the code a little bit you can begin to see many
+possibilities.</div>
+<div class="line"><tt class="docutils literal">app.run(port=40000)</tt></div>
+</div>
+<div class="line-block">
+<div class="line">$ python hello.py</div>
+<div class="line">* Running on <a class="reference external" href="http://127.0.0.1:4000/">http://127.0.0.1:4000/</a></div>
+<div class="line">127.0.0.1 - - [04/Aug/2014 21:52:33] &quot;GET / HTTP/1.1&quot; 200 -</div>
+</div>
+<p>So we just changed the port, you can change the default host as well.</p>
+<p>Just a quick little intro, have fun and expand on the hello world.</p>
+
+      </div>
+      <footer class="post-footer">
+        <div class="meta">
+            Posté dans «<a href="/category/web-testing.html">web testing</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a><br />
+            Mots-clés:         </div>
+      </footer>
+    </article>
+      </div>
+    <aside class="page-sidebar">
+      <nav class="widget">
+      <h3>Site</h3>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/archives.html">Archives</a></li>
+          <li><a href="/about.html">A Propos</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="/category/adminstuff.html">AdminStuff</a></li>
+          <li><a href="/category/coding.html">coding</a></li>
+          <li><a href="/category/greek.html">greek</a></li>
+          <li><a href="/category/javascript.html">javascript</a></li>
+          <li><a href="/category/network.html">network</a></li>
+          <li><a href="/category/py-intro.html">py-intro</a></li>
+          <li><a href="/category/web-testing.html">web testing</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Liens</h3>
+        <ul>
+        <li><a href="http://getpelican.com/">Pelican</a></li>
+        <li><a href="http://python.org/">Python.org</a></li>
+        <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+        <li><a href="#">You can modify those links in your config file</a></li>
+        </ul>
+      </nav>
+
+</aside> 
+
+      <footer class="page-footer">
+        <p> Powered by <a href="http://pelican.readthedocs.org">Pelican</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
