@@ -73,6 +73,31 @@ truth values true and false, usually denoted 1 and 0 respectively.`
 from `Boolean algebra wiki <https://en.wikipedia.org/wiki/Boolean_algebra>`__
 
 
+As we look at dynamic code, variables are not static so the information we set has to be evaluated.
+
+Such as a number value.
+
+if an incoming argument is 5.
+
+we might have statement looking for something less than 4 but if it is equal do something else.
+
+      | if argument < 4:
+      |     print("less than 4")
+      | elif argument == 4:
+      |     print("equals 4)
+      | else:
+      |     print("greater than 4")
+
+
+
+
+
+
+
+
+
+
+
 
 
 .. raw:: html

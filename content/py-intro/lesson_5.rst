@@ -15,6 +15,12 @@ PY-Into 5
 
 
 
+getopt
+......
+
+getopt is a library for utilizing command line options.
+
+`simple get opt example <getopt_test.py>`__
 
 
 

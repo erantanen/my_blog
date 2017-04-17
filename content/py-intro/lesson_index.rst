@@ -44,7 +44,7 @@ A quick index
 =====
 
  `Lesson 5 <lesson_5.html>`__
-        | fizz buzz
+        | getopt and fizz buzz
 
 =====
 
