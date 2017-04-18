@@ -89,7 +89,11 @@ Excel
 
 Now a deep dive.
 
-| Look that example for excel.
+| Look at this example of excel.
+| Now that we know about functions, what can be described about the program?
+| Also can this program be made better?
+
+
 
  `example:  excel with small functions?   <./code_snips/excel_example.py>`__
 

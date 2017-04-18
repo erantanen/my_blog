@@ -39,23 +39,6 @@ Now that you have experimented with news paper, build a function that calls it a
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 `Moving forward to Lesson 8 <lesson_8.html>`__
 
 `Moving back to Lesson 6 <lesson_6.html>`__
