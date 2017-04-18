@@ -28,6 +28,9 @@ utility that that will take any combination of numbers.
 `simple get opt example <getopt_test.py>`__
 
 
+Using the example code make a program that you can run from the command line, and test it.
+
+
 
 
 

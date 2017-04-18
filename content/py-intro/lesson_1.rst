@@ -70,8 +70,18 @@ From a terminal windows type "``Python``"
        <br>
     </embed>
 
-| 9%3
-| 9%2
+
+Modulo yields a remainder from the division of the first argument by the second.
+
+
+  | 9%3
+  | 9%2
+
+What are the results when you run the code in python?
+
+
+
+
 
 .. raw:: html
 
