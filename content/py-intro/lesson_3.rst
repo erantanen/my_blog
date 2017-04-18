@@ -107,6 +107,15 @@ Once we have the variable file_input with some data what should we do with it no
 
 | Test this out with the python shell!
 
+
+
+.. raw:: html
+
+    <embed>
+       <br>
+    </embed>
+
+
 `Moving forward to Lesson 4 <lesson_4.html>`__
 
 `Moving back to Lesson 2 <lesson_2.html>`__

@@ -50,3 +50,18 @@ A quick index
 
  `Lesson 6 <lesson_6.html>`__
         | functions and excel intro
+
+
+=====
+
+ `Lesson 7 <lesson_7.html>`__
+        | newspaper
+
+
+
+
+.. raw:: html
+
+    <embed>
+       <br>
+    </embed>

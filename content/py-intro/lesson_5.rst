@@ -25,7 +25,7 @@ utility that that will take any combination of numbers.
 
 
 
-`simple get opt example <getopt_test.py>`__
+`simple get opt example <./code_snips/getopt_test.py>`__
 
 
 Using the example code make a program that you can run from the command line, and test it.
@@ -39,6 +39,12 @@ Using the example code make a program that you can run from the command line, an
 
 
 
+
+.. raw:: html
+
+    <embed>
+       <br>
+    </embed>
 
 
 
