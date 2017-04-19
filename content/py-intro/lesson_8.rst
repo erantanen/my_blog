@@ -26,6 +26,13 @@ Here a couple of toys that I created, there are all sorts of variations on these
 
 enjoy!
 
+
+   | I was asked today about sin and cos .
+   | So a quick break down of these two ... `wiki page <https://en.wikipedia.org/wiki/Sine>`__
+
+
+
+
 =====
 
 

@@ -1,3 +1,6 @@
+#! /usr/bin/env python
+
+
 """
 a silly spinning text mechanism
 or printing of periods?

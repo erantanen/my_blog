@@ -20,6 +20,17 @@ I wrote up two quick takes on it with a while instead of a for loop.
 
 I ran both of these on -  3.2.0-34-generic-pae #53-Ubuntu
 
+
+.. raw:: html
+
+    <embed>
+       <br>
+    </embed>
+
+
+
+
+
 | In C:
 | #include <stdio.h>
 
@@ -47,6 +58,8 @@ int main() {
 |   --i;
 | }
 
+=====
+
 In Perl:
 
 #! /usr/bin/perl -w
@@ -70,6 +83,10 @@ In Perl:
 |   print("$i t$flagn");
 |   --$i;
 | }
+
+
+=====
+
 
  In TCL:
 
@@ -104,6 +121,10 @@ In Perl:
 
 |   incr i -1
 |  }
+
+
+=====
+
 
 |  In C#:
 | using System;

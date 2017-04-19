@@ -56,12 +56,18 @@ A quick index
  `Lesson 7 <lesson_7.html>`__
         | newspaper
 
-
-
 =====
 
  `Toys  <lesson_8.html>`__
         | a couple of fun toys
+
+=====
+
+ `Errors <lesson_9.html>`__
+        | Errors and how to handle them?
+
+
+
 
 
 

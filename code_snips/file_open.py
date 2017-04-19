@@ -16,3 +16,8 @@ with open("blah.txt", "w") as FH:
     for elm in range(10):
         #elm has been cast to a string
         FH.write(str(elm) + "\n")
+
+
+
+
+
