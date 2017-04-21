@@ -54,7 +54,7 @@ A quick index
 =====
 
  `Lesson 7 <lesson_7.html>`__
-        | newspaper
+        | newspaper and google
 
 =====
 
