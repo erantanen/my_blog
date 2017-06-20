@@ -44,8 +44,54 @@
       <div class="post-content"> 
         <embed>
    <br>
+</embed><div class="section" id="getopt">
+<h2>getopt</h2>
+<p>getopt is a library for utilizing command line options. By adding arguments we can extend simple static variables.</p>
+<p>As we have worked with Pythagorean expression, all the variables have been static in nature now with we can make a
+utility that that will take any combination of numbers.</p>
+<p><a class="reference external" href="./code_snips/getopt_test.py">simple get opt example</a></p>
+<p>Using the example code make a program that you can run from the command line, and test it.</p>
+<embed>
+   <br>
+</embed></div>
+<div class="section" id="fizzbuzz">
+<h2>fizzbuzz?</h2>
+<p>We are going to use the fizzbuzz as an entry point for the first Euler problem.</p>
+<blockquote>
+<div class="line-block">
+<div class="line">If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.</div>
+<div class="line">The sum of these multiples is 23.</div>
+<div class="line">Find the sum of all the multiples of 3 or 5 below 1000.</div>
+</div>
+</blockquote>
+<p><a class="reference external" href="https://projecteuler.net/problem=1">Project Euler site</a></p>
+<p>Going back to the modulo examples, we now add these to an if statement.</p>
+<div class="highlight"><pre><span></span><span class="n">elm</span> <span class="o">=</span> <span class="mi">10</span>
+
+ <span class="k">if</span> <span class="n">elm</span><span class="o">%</span><span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="o">:</span>
+     <span class="n">print</span><span class="p">(</span><span class="s">&quot;elm has no remainder&quot;</span><span class="p">)</span>
+</pre></div>
+<p>Right this is pretty straight forward, maybe? Now lets replace elm's static number with
+for loop and cycle through some numbers</p>
+<div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">elm</span> <span class="n">in</span> <span class="n">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="o">:</span>
+     <span class="k">if</span> <span class="n">elm</span><span class="o">%</span><span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="o">:</span>
+          <span class="n">print</span><span class="p">(</span><span class="s">&quot;elm has no remainder&quot;</span><span class="p">)</span>
+</pre></div>
+<p>This loop will print all mod 3 results, but the question is geared toward multple 3 and 5.</p>
+<div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">elm</span> <span class="n">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="o">:</span>
+     <span class="k">if</span> <span class="n">elm</span><span class="o">%</span><span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="n">and</span> <span class="n">elm</span><span class="o">%</span><span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">;</span>
+          <span class="n">print</span><span class="p">(</span><span class="s">&quot;elm has no remainder&quot;</span><span class="p">)</span>
+</pre></div>
+<p>With a compound conditional we can begin to see how you might solve the whole fizzbuzz issue.</p>
+<p>As an example of the same algorithm being used across different
+languages look at <a class="reference external" href="http://pseudopoint.net/the-buzz-of-fizz-code.html">my fizzbuzz page</a></p>
+<p>Also if you want to fork my code or add to it on <a class="reference external" href="https://github.com/erantanen/fizzbuzz">GitHub</a> go forth
+and do great things</p>
+<embed>
+   <br>
 </embed><p><a class="reference external" href="lesson_6.html">Moving forward to Lesson 6</a></p>
 <p><a class="reference external" href="lesson_4.html">Moving back to Lesson 4</a></p>
+</div>
 
       </div>
       <footer class="post-footer">

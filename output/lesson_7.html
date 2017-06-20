@@ -50,8 +50,39 @@
 <p><a class="reference external" href="https://github.com/codelucas/newspaper">newspaper</a></p>
 <p>With this library we will be pulling the data in to a variable for parsing (searching) that will later be analyzed
 for some criteria.</p>
-<hr class="docutils" />
 <p>Now that you have experimented with news paper, build a function that calls it and has an output.</p>
+<embed>
+   <br>
+</embed></div>
+<div class="section" id="google-finance">
+<h2>google finance</h2>
+<blockquote>
+<div class="line-block">
+<div class="line">How to capture real time stock data?</div>
+<div class="line">We can use an API (application program interface) that Google created to do pulls.</div>
+</div>
+</blockquote>
+<p><a class="reference external" href="https://github.com/hongtaocai/googlefinance">google finance at github</a></p>
+<div class="highlight"><pre><span></span><span class="n">from</span> <span class="n">googlefinance</span> <span class="n">import</span> <span class="n">getQuotes</span>
+<span class="n">import</span> <span class="n">json</span>
+
+<span class="n">print</span><span class="p">(</span><span class="n">json</span><span class="p">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">getQuotes</span><span class="p">(</span><span class="err">&#39;</span><span class="n">AAPL</span><span class="err">&#39;</span><span class="p">),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+<p>Lets try the above code out in pycharm.</p>
+<blockquote>
+<div class="line-block">
+<div class="line">This code is very simple, and static but by using the elements that we have learned so far:</div>
+</div>
+<blockquote>
+<ul class="simple">
+<li>function creation</li>
+<li>looping</li>
+<li>list creation</li>
+<li>key/value pair</li>
+</ul>
+</blockquote>
+</blockquote>
+<p>Extending the code to be more dynamic/flexible and useful.</p>
 <embed>
    <br>
 </embed><p><a class="reference external" href="lesson_8.html">Moving forward to Lesson 8</a></p>

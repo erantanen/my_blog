@@ -1,3 +1,6 @@
+#! /usr/bin/env python
+
+
 """ 
 
 initial example of for loop and mod

@@ -6,6 +6,15 @@ Flask: a mini web front end
 :slug: flask-a-mini-web-front-end
 :status: published
 
+
+
+.. raw:: html
+
+    <embed>
+       <br>
+    </embed>
+
+
 I started to work on a project that needed to offer up a couple of data
 structures in a json format in a very simple method. This is part of
 mechanism using `vis.js <http://visjs.org/>`__ inside of `trac's
@@ -19,32 +28,62 @@ good to boot!
   done it in OS X as well.
 | If you don't have python get it. Then a quick couple of steps after
   that.
-| ``sudo easy_install pip pip install flask pip install flask-cors``
 
-| "easy\_install" is part of python's setuptool mechanism.
-| "pip" is a python package manager of sorts.
-| "cors" is for Cross Origin Resource Sharing (more on that later)
 
-| Once these are installed, open up a text editor and type/paste in a
+.. code-block:: c
+
+ sudo easy_install pip
+ pip install flask
+ pip install flask-cors
+
+
+    | "easy\_install" is part of python's setuptool mechanism.
+    | "pip" is a python package manager of sorts.
+    | "cors" is for Cross Origin Resource Sharing (more on that later)
+
+
+ Once these are installed, open up a text editor and type/paste in a
   "hello world"
-| ``from flask import Flask app = Flask(__name__) @app.route("/") def hello():     return "Hello World!" if __name__ == "__main__":     app.run()``
+
+.. code-block:: c
+
+    from flask import Flask
+    app = Flask(__name__)
+
+    @app.route("/")
+    def hello():
+        return "Hello World!"
+
+    if __name__ == "__main__":
+        app.run()
+
+
+
 | Save the file as hello.py and on the command line when you put it
   together you get.
 
-| $ python hello.py
-| \* Running on http://127.0.0.1:5000/
-| 127.0.0.1 - - [04/Aug/2014 21:49:35] "GET / HTTP/1.1" 200 -
+.. code-block:: c
 
-| Open up a browser enter in either 127.0.0.1:5000 or localhost:5000
-| The address:port are default.
+ $ python hello.py
+ \* Running on http://127.0.0.1:5000/
+ 127.0.0.1 - - [04/Aug/2014 21:49:35] "GET / HTTP/1.1" 200 -
+
+
+
+
+Open up a browser enter in either 127.0.0.1:5000 or localhost:5000
+ The address:port is default at 5000.
 
 | By changing the code a little bit you can begin to see many
   possibilities.
 | ``app.run(port=40000)``
 
-| $ python hello.py
-| \* Running on http://127.0.0.1:4000/
-| 127.0.0.1 - - [04/Aug/2014 21:52:33] "GET / HTTP/1.1" 200 -
+
+.. code-block:: c
+
+ $ python hello.py
+ \* Running on http://127.0.0.1:4000/
+ 127.0.0.1 - - [04/Aug/2014 21:52:33] "GET / HTTP/1.1" 200 -
 
 So we just changed the port, you can change the default host as well.
 

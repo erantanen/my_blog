@@ -42,7 +42,9 @@
         </div>
       </header>
       <div class="post-content"> 
-        <p>I started to work on a project that needed to offer up a couple of data
+        <embed>
+   <br>
+</embed><p>I started to work on a project that needed to offer up a couple of data
 structures in a json format in a very simple method. This is part of
 mechanism using <a class="reference external" href="http://visjs.org/">vis.js</a> inside of <a class="reference external" href="http://trac.edgewall.org/wiki/TracWiki">trac's
 wiki</a>. With a bit of reading
@@ -55,39 +57,51 @@ depending on your os. I did the initial build in Ubuntu, but have also
 done it in OS X as well.</div>
 <div class="line">If you don't have python get it. Then a quick couple of steps after
 that.</div>
-<div class="line"><tt class="docutils literal">sudo easy_install pip pip install flask pip install <span class="pre">flask-cors</span></tt></div>
 </div>
+<div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">easy_install</span> <span class="n">pip</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">flask</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">flask</span><span class="o">-</span><span class="n">cors</span>
+
+
+   <span class="o">|</span> <span class="s">&quot;easy\_install&quot;</span> <span class="n">is</span> <span class="n">part</span> <span class="n">of</span> <span class="n">python</span><span class="err">&#39;</span><span class="n">s</span> <span class="n">setuptool</span> <span class="n">mechanism</span><span class="p">.</span>
+   <span class="o">|</span> <span class="s">&quot;pip&quot;</span> <span class="n">is</span> <span class="n">a</span> <span class="n">python</span> <span class="n">package</span> <span class="n">manager</span> <span class="n">of</span> <span class="n">sorts</span><span class="p">.</span>
+   <span class="o">|</span> <span class="s">&quot;cors&quot;</span> <span class="n">is</span> <span class="k">for</span> <span class="n">Cross</span> <span class="n">Origin</span> <span class="n">Resource</span> <span class="n">Sharing</span> <span class="p">(</span><span class="n">more</span> <span class="n">on</span> <span class="n">that</span> <span class="n">later</span><span class="p">)</span>
+
+
+<span class="n">Once</span> <span class="n">these</span> <span class="n">are</span> <span class="n">installed</span><span class="p">,</span> <span class="n">open</span> <span class="n">up</span> <span class="n">a</span> <span class="n">text</span> <span class="n">editor</span> <span class="n">and</span> <span class="n">type</span><span class="o">/</span><span class="n">paste</span> <span class="n">in</span> <span class="n">a</span>
+ <span class="s">&quot;hello world&quot;</span>
+</pre></div>
+<div class="highlight"><pre><span></span><span class="n">from</span> <span class="n">flask</span> <span class="n">import</span> <span class="n">Flask</span>
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
+
+<span class="err">@</span><span class="n">app</span><span class="p">.</span><span class="n">route</span><span class="p">(</span><span class="s">&quot;/&quot;</span><span class="p">)</span>
+<span class="n">def</span> <span class="n">hello</span><span class="p">()</span><span class="o">:</span>
+    <span class="k">return</span> <span class="s">&quot;Hello World!&quot;</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&quot;__main__&quot;</span><span class="o">:</span>
+    <span class="n">app</span><span class="p">.</span><span class="n">run</span><span class="p">()</span>
+</pre></div>
 <div class="line-block">
-<div class="line">&quot;easy_install&quot; is part of python's setuptool mechanism.</div>
-<div class="line">&quot;pip&quot; is a python package manager of sorts.</div>
-<div class="line">&quot;cors&quot; is for Cross Origin Resource Sharing (more on that later)</div>
-</div>
-<div class="line-block">
-<div class="line">Once these are installed, open up a text editor and type/paste in a
-&quot;hello world&quot;</div>
-<div class="line"><tt class="docutils literal">from flask import Flask app = Flask(__name__) <span class="pre">&#64;app.route(&quot;/&quot;)</span> def <span class="pre">hello():</span>&nbsp;&nbsp;&nbsp;&nbsp; return &quot;Hello World!&quot; if __name__ == &quot;__main__&quot;:&nbsp;&nbsp;&nbsp;&nbsp; app.run()</tt></div>
 <div class="line">Save the file as hello.py and on the command line when you put it
 together you get.</div>
 </div>
-<div class="line-block">
-<div class="line">$ python hello.py</div>
-<div class="line">* Running on <a class="reference external" href="http://127.0.0.1:5000/">http://127.0.0.1:5000/</a></div>
-<div class="line">127.0.0.1 - - [04/Aug/2014 21:49:35] &quot;GET / HTTP/1.1&quot; 200 -</div>
-</div>
-<div class="line-block">
-<div class="line">Open up a browser enter in either 127.0.0.1:5000 or localhost:5000</div>
-<div class="line">The address:port are default.</div>
-</div>
+<div class="highlight"><pre><span></span><span class="err">$</span> <span class="n">python</span> <span class="n">hello</span><span class="p">.</span><span class="n">py</span>
+<span class="err">\</span><span class="o">*</span> <span class="n">Running</span> <span class="n">on</span> <span class="nl">http</span><span class="p">:</span><span class="c1">//127.0.0.1:5000/</span>
+<span class="mf">127.0.0.1</span> <span class="o">-</span> <span class="o">-</span> <span class="p">[</span><span class="mo">04</span><span class="o">/</span><span class="n">Aug</span><span class="o">/</span><span class="mi">2014</span> <span class="mi">21</span><span class="o">:</span><span class="mi">49</span><span class="o">:</span><span class="mi">35</span><span class="p">]</span> <span class="s">&quot;GET / HTTP/1.1&quot;</span> <span class="mi">200</span> <span class="o">-</span>
+</pre></div>
+<dl class="docutils">
+<dt>Open up a browser enter in either 127.0.0.1:5000 or localhost:5000</dt>
+<dd>The address:port is default at 5000.</dd>
+</dl>
 <div class="line-block">
 <div class="line">By changing the code a little bit you can begin to see many
 possibilities.</div>
 <div class="line"><tt class="docutils literal">app.run(port=40000)</tt></div>
 </div>
-<div class="line-block">
-<div class="line">$ python hello.py</div>
-<div class="line">* Running on <a class="reference external" href="http://127.0.0.1:4000/">http://127.0.0.1:4000/</a></div>
-<div class="line">127.0.0.1 - - [04/Aug/2014 21:52:33] &quot;GET / HTTP/1.1&quot; 200 -</div>
-</div>
+<div class="highlight"><pre><span></span><span class="err">$</span> <span class="n">python</span> <span class="n">hello</span><span class="p">.</span><span class="n">py</span>
+<span class="err">\</span><span class="o">*</span> <span class="n">Running</span> <span class="n">on</span> <span class="nl">http</span><span class="p">:</span><span class="c1">//127.0.0.1:4000/</span>
+<span class="mf">127.0.0.1</span> <span class="o">-</span> <span class="o">-</span> <span class="p">[</span><span class="mo">04</span><span class="o">/</span><span class="n">Aug</span><span class="o">/</span><span class="mi">2014</span> <span class="mi">21</span><span class="o">:</span><span class="mi">52</span><span class="o">:</span><span class="mi">33</span><span class="p">]</span> <span class="s">&quot;GET / HTTP/1.1&quot;</span> <span class="mi">200</span> <span class="o">-</span>
+</pre></div>
 <p>So we just changed the port, you can change the default host as well.</p>
 <p>Just a quick little intro, have fun and expand on the hello world.</p>
 

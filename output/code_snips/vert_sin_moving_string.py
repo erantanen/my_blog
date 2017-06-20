@@ -1,3 +1,6 @@
+#! /usr/bin/env python
+
+
 '''
 Silly program/toy to print a string using a vertical sin wave
 as a flowing justify.
