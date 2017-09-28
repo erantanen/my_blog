@@ -1,0 +1,96 @@
+#! /usr/bin/env sh
+
+# chkconfig: 345 85 15
+#
+#
+# jenkins init script
+#
+#
+# updated
+# 10:19 6/14/2017
+
+
+# pulls in init functions
+. /etc/init.d/functions
+
+#
+# . $AGENT_INIT_CFG
+. /app/jenkinsAgent/admin/agent.cfg
+
+
+#builds secret switch for host connection
+JENKINS_TOKEN="${CONNECT_USER}:${CONNECT_USER_TOKEN}"
+
+
+#build command string
+full_command="${LOCAL_JAVA_PATH} -jar \
+                ${AGENT_EXECUTION_DIR}/$JENKINS_AGENT_BIN_NAME -jnlpUrl \
+                ${JENKINS_MASTER_COMPUTER}/${AGENT_NAME}/slave-agent.jnlp \
+                -jnlpCredentials $JENKINS_TOKEN"
+
+function GRAB_PID()
+{
+  local  PID=`ps -ef | grep 'java -jar.*slave.jar\|[j]ava -jar slave.jar' |grep -v grep | awk '{print $2}'`
+  echo    "$PID"
+}
+
+
+
+start()
+{
+    echo $(GRAB_PID)
+    if  [ ! -z "$(GRAB_PID)" ];
+        then
+            echo -e "\n  Jenkins is already running\n  Its process id "$(GRAB_PID)" ";
+            echo -e "\n  If you want to do a restart then run\n  service jenkinsAgent restart "
+            echo -e "\n  or a manual stop then a manual start\n"
+          else
+            echo -e "\n  Starting Jenkins "
+            runuser -l $AGENT_USER -c "$full_command >> jenkins_jar.log 2>&1 &"
+            echo -e "\n  Jenkins process id "$(GRAB_PID)" started\n"
+            echo -e "\n";
+    fi
+}
+
+
+stop()
+  {
+    Old_PID="$(GRAB_PID)"
+    if  [ -z "$(GRAB_PID)" ]; then echo -e  "\n  [Jenkins is not running] \n\n";
+      else
+        echo -e  "\n  Stopping Jenkins"
+        [ -n "$(GRAB_PID)" ] && kill "$(GRAB_PID)"
+        echo -e "\n  Jenkins process id "$Old_PID" killed\n";
+    fi
+}
+
+
+status()
+{
+    if  [ -z "$(GRAB_PID)" ]; then echo -e  "\n  [Jenkins is not running] \n\n";
+      else
+        echo -e "\n  Jenkins process id is "$(GRAB_PID)" \n";
+    fi
+}
+
+# See how we were called.
+case "$1" in
+  start)
+    start
+    ;;
+  stop)
+    stop
+    ;;
+  restart|reload)
+    stop
+    start
+    ;;
+  status)
+    status java
+    ;;
+  *)
+    echo $"Usage: $0 {start|stop|restart|reload}"
+    exit 1
+esac
+
+exit 0
