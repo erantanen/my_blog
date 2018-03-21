@@ -53,3 +53,20 @@ These directions worked to a "T"
 http://pressreset.net/2011/10/moving-existing-local-git-repository-into-a-fresh-gitolite-setup/
 
 
+Git -> Two Remote Heads
+#######################
+
+https://intellij-support.jetbrains.com/hc/en-us/community/posts/206722225-how-to-specify-multiple-remote-repositories
+
+ed-rantanens-Mac-Pro-3:.git edrantanen$ more config
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+        ignorecase = true
+        precomposeunicode = true
+[branch "master"]
+[remote "origin"]
+        url = git@192.168.254.27:my_blog.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
