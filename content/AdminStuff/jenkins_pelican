@@ -58,6 +58,8 @@ Git -> Two Remote Heads
 
 https://intellij-support.jetbrains.com/hc/en-us/community/posts/206722225-how-to-specify-multiple-remote-repositories
 
+
+ mod?
 ed-rantanens-Mac-Pro-3:.git edrantanen$ more config
 [core]
         repositoryformatversion = 0
