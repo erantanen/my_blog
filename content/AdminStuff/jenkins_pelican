@@ -60,15 +60,16 @@ https://intellij-support.jetbrains.com/hc/en-us/community/posts/206722225-how-to
 
 
  mod?
-ed-rantanens-Mac-Pro-3:.git edrantanen$ more config
-[core]
-        repositoryformatversion = 0
-        filemode = true
-        bare = false
-        logallrefupdates = true
-        ignorecase = true
-        precomposeunicode = true
-[branch "master"]
-[remote "origin"]
-        url = git@192.168.254.27:my_blog.git
-        fetch = +refs/heads/*:refs/remotes/origin/*
+before
+
+After
+ed-rantanens-Mac-Pro-3:my_blog edrantanen$ git remote show origin
+* remote origin
+  Fetch URL: git@192.168.254.27:my_blog.git
+  Push  URL: https://github.com/erantanen/my_blog.git
+  Push  URL: git@192.168.254.27:my_blog.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local ref configured for 'git push':
+    master pushes to master (fast-forwardable)
