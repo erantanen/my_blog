@@ -1,6 +1,6 @@
-bash example
-############
-:date: 2017-08-7 23:31
+bash scripts  updated
+#####################
+:date: 2018-12-2 23:31
 :author: Ed Rantanen
 :category: AdminStuff
 :slug: 1_example
@@ -13,6 +13,14 @@ bash example
        <br>
     </embed>
 
+
+`example: bash scriptlets in one file  <./code_snips/bash.htm>`__
+
+The above examples can be put into a file with a copy/paste (one to a file)
+    * Name the file something(?)
+    * Do a chmod +x on file
+    * If you have your own little bin dir put in there (helps if you set-up a path for this)
+    * Test it out!
 
 
 In trouble shooting I need a quick way to visualize some data so wrote a couple of quick and dirty bash scripts.

@@ -1,8 +1,16 @@
-=====
+=======
 my_blog
-=====
+=======
 
 
 .. contents::
 
-a quick trial ... Transferred blog from Wordpress to Pelican.
+Some general notes and how-to's
+
+Along with an intro to python
+    (about a week long class)
+
+
+
+
+A work in progress.
