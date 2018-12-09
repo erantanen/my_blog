@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+    <title>PY-Into 4 — Nyble a Day</title>
+    <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+    <link rel="shortcut icon" type="text/css" href="/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml"
+                           title="Nyble a Day — Flux Atom"
+                           href="/" /> 
+    <!--[if lte IE 8]><script src="/theme/js/html5shiv.js"></script><![endif]-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+
+    <meta name="author"   content="Ed Rantanen" />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-head">
+        <h1>
+          <a href="/index.html">Nyble a Day</a>
+        </h1>
+      </header>
+
+      <div class="page-content">
+     <article class="post content">
+      <header class="post-header">
+        <time datetime="2017-04-01T23:34:00+02:00" pubdate="pubdate">
+          Sat 01 April 2017
+        </time>
+        <h1>
+          <a rel="bookmark"
+             href="/lesson_4.html"
+             title="Lien permanent vers «PY-Into 4»">
+             PY-Into 4
+          </a>
+        </h1>
+        <div class="meta">
+            Dans «<a href="/category/py-intro.html">py-intro</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a>
+        </div>
+      </header>
+      <div class="post-content"> 
+        <embed>
+   <br>
+</embed><div class="section" id="for-loops">
+<h2>for loops</h2>
+<p>Lets start with a &quot;for&quot; loop, you can think of this as number of revolutions; if only one number
+is used such as 10 as a static number it is very limiting.</p>
+<div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">elm</span> <span class="n">in</span> <span class="n">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">:</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="n">elm</span> <span class="o">*</span> <span class="mi">2</span>
+    <span class="n">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</pre></div>
+<p>A for loop using a single variable we are moving forward in being dynamic!</p>
+<div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="k">for</span> <span class="n">elm</span> <span class="n">in</span> <span class="n">range</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">:</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="n">elm</span> <span class="o">*</span> <span class="mi">2</span>
+    <span class="n">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</pre></div>
+<p>Now we start to get crazy by looping through lists and not just a single variable, the range is set by the size of
+the list so we can by pass its use.</p>
+<div class="highlight"><pre><span></span><span class="n">a_group_of_numbers</span> <span class="o">=</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">elm</span> <span class="n">in</span> <span class="nl">a_group_of_numbers</span><span class="p">:</span>
+    <span class="n">res</span> <span class="o">=</span> <span class="n">elm</span> <span class="o">*</span> <span class="mi">2</span>
+    <span class="n">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</pre></div>
+<p>And now an iteration through a dictionary, as we do look at the concatenation and casting</p>
+<div class="highlight"><pre><span></span><span class="n">a_dictionary</span> <span class="o">=</span> <span class="p">{</span><span class="sc">&#39;x&#39;</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span> <span class="sc">&#39;y&#39;</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span> <span class="sc">&#39;z&#39;</span><span class="o">:</span> <span class="mi">3</span><span class="p">}</span>
+
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="n">in</span> <span class="n">a_dictionary</span><span class="p">.</span><span class="n">items</span><span class="p">()</span><span class="o">:</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="n">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="n">print</span><span class="p">(</span><span class="n">key</span> <span class="o">+</span> <span class="s">&quot; : &quot;</span> <span class="o">+</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="while-loops">
+<h2>while loops</h2>
+<p>A while loop will continue to cycle as long as its conditional statement is true. These statements can be hazard to
+your health, unlike a for loop that has a beginnings and an end, the while loop just goes and goes and goes.</p>
+<div class="highlight"><pre><span></span><span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">:</span>
+    <span class="n">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=+</span> <span class="mi">1</span>
+</pre></div>
+<p>Run the above code, what is the result?</p>
+<blockquote>
+<div class="line-block">
+<div class="line">What is the fix for the above code?</div>
+<div class="line">What is the condition being set? or not set?</div>
+</div>
+</blockquote>
+<p>Here is a some real/sudo code, but the idea is for an example of socket listener for a web site with the idea
+of continuous running while loop.</p>
+<div class="highlight"><pre><span></span><span class="nl">try</span><span class="p">:</span>
+   <span class="n">s</span> <span class="o">=</span> <span class="n">socket</span><span class="p">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="p">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="p">.</span><span class="n">SOCK_STREAM</span><span class="p">)</span>
+<span class="n">except</span> <span class="n">socket</span><span class="p">.</span><span class="nl">error</span><span class="p">:</span>
+   <span class="n">print</span> <span class="err">&#39;</span><span class="n">Failed</span> <span class="n">to</span> <span class="n">create</span> <span class="n">socket</span><span class="err">&#39;</span>
+   <span class="n">sys</span><span class="p">.</span><span class="n">exit</span><span class="p">()</span>
+<span class="n">s</span><span class="p">.</span><span class="n">bind</span><span class="p">(</span><span class="n">host</span><span class="p">,</span><span class="n">port</span><span class="p">)</span>
+<span class="n">s</span><span class="p">.</span><span class="n">listen</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">conn_good</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span><span class="p">(</span><span class="n">conn_godd</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span><span class="o">:</span>
+    <span class="k">if</span> <span class="n">client</span><span class="p">.</span><span class="n">recv</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mi">4096</span><span class="o">:</span>
+        <span class="n">conn_good</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">elif</span> <span class="n">client</span><span class="p">.</span><span class="n">timeout</span> <span class="o">==</span> <span class="s">&quot;extreme&quot;</span><span class="o">:</span>
+         <span class="n">conn_good</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="o">:</span>
+      <span class="n">print</span><span class="p">(</span><span class="s">&quot;keep running&quot;</span><span class="p">)</span>
+</pre></div>
+<embed>
+   <br>
+</embed><p><a class="reference external" href="lesson_5.html">Moving forward to Lesson 5</a></p>
+<p><a class="reference external" href="lesson_3.html">Moving back to Lesson 3</a></p>
+</div>
+
+      </div>
+      <footer class="post-footer">
+        <div class="meta">
+            Posté dans «<a href="/category/py-intro.html">py-intro</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a><br />
+            Mots-clés:         </div>
+      </footer>
+    </article>
+      </div>
+    <aside class="page-sidebar">
+      <nav class="widget">
+      <h3>Site</h3>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/archives.html">Archives</a></li>
+          <li><a href="/about.html">A Propos</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="/category/adminstuff.html">AdminStuff</a></li>
+          <li><a href="/category/coding.html">coding</a></li>
+          <li><a href="/category/greek.html">greek</a></li>
+          <li><a href="/category/javascript.html">javascript</a></li>
+          <li><a href="/category/network.html">network</a></li>
+          <li><a href="/category/py-intro.html">py-intro</a></li>
+          <li><a href="/category/web-testing.html">web testing</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Liens</h3>
+        <ul>
+        <li><a href="http://getpelican.com/">Pelican</a></li>
+        <li><a href="http://python.org/">Python.org</a></li>
+        <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+        <li><a href="https://github.com/erantanen">My GitHub</a></li>
+        </ul>
+      </nav>
+
+</aside> 
+
+      <footer class="page-footer">
+        <p> Powered by <a href="http://pelican.readthedocs.org">Pelican</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

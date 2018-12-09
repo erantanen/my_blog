@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+    <title>Mojolicious Logging — Nyble a Day</title>
+    <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+    <link rel="shortcut icon" type="text/css" href="/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml"
+                           title="Nyble a Day — Flux Atom"
+                           href="/" /> 
+    <!--[if lte IE 8]><script src="/theme/js/html5shiv.js"></script><![endif]-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+
+    <meta name="author"   content="Ed Rantanen" />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-head">
+        <h1>
+          <a href="/index.html">Nyble a Day</a>
+        </h1>
+      </header>
+
+      <div class="page-content">
+     <article class="post content">
+      <header class="post-header">
+        <time datetime="2014-10-14T02:08:00+02:00" pubdate="pubdate">
+          Tue 14 October 2014
+        </time>
+        <h1>
+          <a rel="bookmark"
+             href="/mojolicious-logging.html"
+             title="Lien permanent vers «Mojolicious Logging»">
+             Mojolicious Logging
+          </a>
+        </h1>
+        <div class="meta">
+            Dans «<a href="/category/web-testing.html">web testing</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a>
+        </div>
+      </header>
+      <div class="post-content"> 
+        <div class="line-block">
+<div class="line">After playing around with Mojo::Log for a few days I came across this
+great plugin
+<a class="reference external" href="http://search.cpan.org/~graf/Mojolicious-Plugin-AccessLog-0.001/lib/Mojolicious/Plugin/AccessLog.pm">AccessLog</a>.
+Something simple like changing the log name or its location is a bit
+painful in the vanilla Mojo::Log. The format is easy to adjust, if
+using morbo you can make adjustments on the fly and quickly see what
+the results are.</div>
+<div class="line">If no format line is added then output will be:</div>
+<div class="line"><tt class="docutils literal">127.0.0.1 - - [13/Oct/2014:20:28:56 <span class="pre">-0400]</span> &quot;GET / HTTP/1.1&quot; 200 137 127.0.0.1 - - [13/Oct/2014:20:28:57 <span class="pre">-0400]</span> &quot;GET / HTTP/1.1&quot; 200 137</tt></div>
+</div>
+<div class="line-block">
+<div class="line">If a format line is added with something simple as this &quot; [%a] - %b&quot;
+output will be`` [127.0.0.1] - 137  [127.0.0.1] - 137``</div>
+<div class="line">The link has large list to pick from for the format, have fun.</div>
+</div>
+<div class="line-block">
+<div class="line">Here is are two Mojolicious::Lite examples.</div>
+<div class="line">The first one has the plugin outside of the route.</div>
+<div class="line"><tt class="docutils literal"><span class="pre">#!/usr/bin/env</span> perl use <span class="pre">Mojolicious::Lite;</span> use warnings;</tt></div>
+</div>
+<div class="line-block">
+<div class="line">plugin AccessLog =&gt; {log =&gt; 'log/access.log',</div>
+<div class="line">format=&gt; &quot; %a - %b&quot;</div>
+<div class="line">};</div>
+</div>
+<div class="line-block">
+<div class="line">get '/' =&gt; sub {</div>
+<div class="line">my $c = shift;</div>
+<div class="line">$c-&gt;render('index');</div>
+<div class="line">};</div>
+</div>
+<div class="line-block">
+<div class="line">app-&gt;start;</div>
+<div class="line">__DATA__</div>
+</div>
+<div class="line-block">
+<div class="line">&#64;&#64; index.html.ep</div>
+<div class="line">% layout 'default';</div>
+<div class="line">% title 'Welcome';</div>
+<div class="line">Welcome to the Mojolicious real-time web framework!</div>
+</div>
+<p><div class="line-block">
+<div class="line">&#64;&#64; layouts/default.html.ep</div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>&lt;%= content %&gt;</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</p><div class="line-block">
+<div class="line">and the second one has the plugin in side of the route.</div>
+<div class="line"><tt class="docutils literal"><span class="pre">#!/usr/bin/env</span> perl use <span class="pre">Mojolicious::Lite;</span> use warnings;</tt></div>
+</div>
+<div class="line-block">
+<div class="line">get '/' =&gt; sub {</div>
+<div class="line">my $c = shift;</div>
+<div class="line">$c-&gt;render('index');</div>
+</div>
+<div class="line-block">
+<div class="line">plugin AccessLog =&gt; {log =&gt; 'log/access.log',</div>
+<div class="line">format=&gt; &quot; %a - %b&quot;</div>
+<div class="line">};</div>
+<div class="line">};</div>
+</div>
+<div class="line-block">
+<div class="line">app-&gt;start;</div>
+<div class="line">__DATA__</div>
+</div>
+<div class="line-block">
+<div class="line">&#64;&#64; index.html.ep</div>
+<div class="line">% layout 'default';</div>
+<div class="line">% title 'Welcome';</div>
+<div class="line">Welcome to the Mojolicious real-time web framework!</div>
+</div>
+<p><div class="line-block">
+<div class="line">&#64;&#64; layouts/default.html.ep</div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>&lt;%= content %&gt;</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</p><p>So now we might think why have it inside of the route? Well depending on
+what is getting logged, you might have some special needs that would
+require more data gathered for your log? This way you can not only build
+a format but then label each route and its log. At the same time an
+overall dev/production log can still be built and utilized and/or
+archived for parsing at a later date.</p>
+
+      </div>
+      <footer class="post-footer">
+        <div class="meta">
+            Posté dans «<a href="/category/web-testing.html">web testing</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a><br />
+            Mots-clés:         </div>
+      </footer>
+    </article>
+      </div>
+    <aside class="page-sidebar">
+      <nav class="widget">
+      <h3>Site</h3>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/archives.html">Archives</a></li>
+          <li><a href="/about.html">A Propos</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="/category/adminstuff.html">AdminStuff</a></li>
+          <li><a href="/category/coding.html">coding</a></li>
+          <li><a href="/category/greek.html">greek</a></li>
+          <li><a href="/category/javascript.html">javascript</a></li>
+          <li><a href="/category/network.html">network</a></li>
+          <li><a href="/category/py-intro.html">py-intro</a></li>
+          <li><a href="/category/web-testing.html">web testing</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Liens</h3>
+        <ul>
+        <li><a href="http://getpelican.com/">Pelican</a></li>
+        <li><a href="http://python.org/">Python.org</a></li>
+        <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+        <li><a href="https://github.com/erantanen">My GitHub</a></li>
+        </ul>
+      </nav>
+
+</aside> 
+
+      <footer class="page-footer">
+        <p> Powered by <a href="http://pelican.readthedocs.org">Pelican</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

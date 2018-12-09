@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<canvas id="myCanvas" width="300" height="300" solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<p id="myCanvas"></p>
+
+
+
+<script>
+
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+
+
+function myCircle(x,y,r){
+ var start = 0;
+ var finish = 2*Math.PI;
+
+ ctx.beginPath();
+ ctx.arc(x,y,r,start, finish);
+ ctx.stroke();
+}
+
+for(var incr=0; incr< 50; incr+=3){
+	var rxMov = (Math.random() * 100)*2;
+	var ryMov = (Math.random() * 100)*2;
+
+     myCircle(100+rxMov,100+ryMov,20)
+}
+ctx.stroke();
+</script>
+
+</body>
+</html> 

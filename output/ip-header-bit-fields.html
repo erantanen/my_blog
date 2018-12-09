@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+    <title>IP Header: Bit fields. — Nyble a Day</title>
+    <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+    <link rel="shortcut icon" type="text/css" href="/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml"
+                           title="Nyble a Day — Flux Atom"
+                           href="/" /> 
+    <!--[if lte IE 8]><script src="/theme/js/html5shiv.js"></script><![endif]-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+
+    <meta name="author"   content="Ed Rantanen" />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-head">
+        <h1>
+          <a href="/index.html">Nyble a Day</a>
+        </h1>
+      </header>
+
+      <div class="page-content">
+     <article class="post content">
+      <header class="post-header">
+        <time datetime="2014-03-07T18:37:00+01:00" pubdate="pubdate">
+          Fri 07 March 2014
+        </time>
+        <h1>
+          <a rel="bookmark"
+             href="/ip-header-bit-fields.html"
+             title="Lien permanent vers «IP Header: Bit fields.»">
+             IP Header: Bit fields.
+          </a>
+        </h1>
+        <div class="meta">
+            Dans «<a href="/category/network.html">network</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a>
+        </div>
+      </header>
+      <div class="post-content"> 
+        <p>This is an on going project with sniffing protocols.</p>
+<p>Working my way through the IP header I started wonder why many of the
+structs have ihl before the version when in the rfc 791 it shows the
+version before ihl.&nbsp; This is the original struct I was playing with also
+I noticed that the ihl has a bit field of 5, which did not make sense
+since the word length is 8 bits long.</p>
+<div class="line-block">
+<div class="line">struct ipheader {</div>
+<div class="line">&nbsp; &nbsp; unsigned char&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iph_ihl:5, iph_ver:4;</div>
+<div class="line">&nbsp; &nbsp; unsigned char&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iph_tos;</div>
+<div class="line">&nbsp; &nbsp; unsigned short int iph_len;</div>
+<div class="line">&nbsp; &nbsp; unsigned short int iph_ident;</div>
+<div class="line">&nbsp; &nbsp; unsigned char&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iph_flag;</div>
+<div class="line">&nbsp; &nbsp; unsigned short int iph_offset;</div>
+<div class="line">&nbsp; &nbsp; unsigned char&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iph_ttl;</div>
+<div class="line">&nbsp; &nbsp; unsigned char&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iph_protocol;</div>
+<div class="line">&nbsp; &nbsp; unsigned short int iph_chksum;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; unsigned int&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iph_sourceip;</div>
+<div class="line">&nbsp; &nbsp; unsigned int&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iph_destip;</div>
+<div class="line">};</div>
+</div>
+<div class="line-block">
+<div class="line">So I started to play with making some modifcations to a struct, with
+bit fields.</div>
+<div class="line">Used&nbsp;&nbsp;<a class="reference external" href="http://www.cs.cf.ac.uk/Dave/C/node13.html">Low Level Operators and Bit
+Fields</a>&nbsp;&nbsp; as beginning
+guide.</div>
+</div>
+<div class="line-block">
+<div class="line">&nbsp;struct ipheader {</div>
+<div class="line">&nbsp;&nbsp; unsigned int&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;iph_t1:1;</div>
+<div class="line">&nbsp;&nbsp; unsigned int&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;iph_t2:1;</div>
+<div class="line">&nbsp;&nbsp; unsigned int&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;iph_t3:1;</div>
+<div class="line">&nbsp;&nbsp; unsigned int&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;iph_t4:1;</div>
+<div class="line">&nbsp;&nbsp; unsigned int&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;iph_t5:1;</div>
+<div class="line">&nbsp;&nbsp; unsigned int&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;iph_t6:1;</div>
+<div class="line">&nbsp;&nbsp; unsigned int&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;iph_t7:1;</div>
+<div class="line">&nbsp;&nbsp; unsigned int&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;iph_t8:1;</div>
+</div>
+<p>I created a simple printf statement to seen what it all looked like, and
+the results at first were a bit confusing. Yes the print statement looks
+messy but it works.</p>
+<div class="line-block">
+<div class="line">printf(&quot;%x%x%x%x%x%x%x%xn&quot;, iph-&gt;iph_t1,</div>
+<div class="line">iph-&gt;iph_t2,</div>
+<div class="line">iph-&gt;iph_t3,</div>
+<div class="line">iph-&gt;iph_t4,</div>
+<div class="line">iph-&gt;iph_t5,</div>
+<div class="line">iph-&gt;iph_t6,</div>
+<div class="line">iph-&gt;iph_t7,</div>
+<div class="line">iph-&gt;iph_t8);</div>
+</div>
+<p>result was -&gt; 10100010</p>
+<div class="line-block">
+<div class="line">So on the whiteboard broke the result into 4 byte pieces, starting
+from the left.</div>
+<div class="line">1:2:4:8 |&nbsp; 1:2:4:8</div>
+<div class="line">1:0:1:0 |&nbsp; 0:0:1:0</div>
+<div class="line">&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4</div>
+</div>
+<p>The word boundary gets filled from the right moves to the left, this
+understand can be used with the rest of the header that has partial word
+boundaries such as ecn and flags.</p>
+
+      </div>
+      <footer class="post-footer">
+        <div class="meta">
+            Posté dans «<a href="/category/network.html">network</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a><br />
+            Mots-clés:         </div>
+      </footer>
+    </article>
+      </div>
+    <aside class="page-sidebar">
+      <nav class="widget">
+      <h3>Site</h3>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/archives.html">Archives</a></li>
+          <li><a href="/about.html">A Propos</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="/category/adminstuff.html">AdminStuff</a></li>
+          <li><a href="/category/coding.html">coding</a></li>
+          <li><a href="/category/greek.html">greek</a></li>
+          <li><a href="/category/javascript.html">javascript</a></li>
+          <li><a href="/category/network.html">network</a></li>
+          <li><a href="/category/py-intro.html">py-intro</a></li>
+          <li><a href="/category/web-testing.html">web testing</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Liens</h3>
+        <ul>
+        <li><a href="http://getpelican.com/">Pelican</a></li>
+        <li><a href="http://python.org/">Python.org</a></li>
+        <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+        <li><a href="https://github.com/erantanen">My GitHub</a></li>
+        </ul>
+      </nav>
+
+</aside> 
+
+      <footer class="page-footer">
+        <p> Powered by <a href="http://pelican.readthedocs.org">Pelican</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

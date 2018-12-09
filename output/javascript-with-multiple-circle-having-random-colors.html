@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+    <title>javascript  with multiple circles having random colors — Nyble a Day</title>
+    <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+    <link rel="shortcut icon" type="text/css" href="/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml"
+                           title="Nyble a Day — Flux Atom"
+                           href="/" /> 
+    <!--[if lte IE 8]><script src="/theme/js/html5shiv.js"></script><![endif]-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+
+    <meta name="author"   content="Ed Rantanen" />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-head">
+        <h1>
+          <a href="/index.html">Nyble a Day</a>
+        </h1>
+      </header>
+
+      <div class="page-content">
+     <article class="post content">
+      <header class="post-header">
+        <time datetime="2014-05-20T23:34:00+02:00" pubdate="pubdate">
+          Tue 20 May 2014
+        </time>
+        <h1>
+          <a rel="bookmark"
+             href="/javascript-with-multiple-circle-having-random-colors.html"
+             title="Lien permanent vers «javascript with multiple circles having random colors»">
+             javascript  with multiple circles having random colors
+          </a>
+        </h1>
+        <div class="meta">
+            Dans «<a href="/category/javascript.html">javascript</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a>
+        </div>
+      </header>
+      <div class="post-content"> 
+        <p>If you look at the random circles and the random circles with colors, a
+bit of refactoring can be seen with regard to the Math.random.
+Math.floor was added to round down the decimal to an integer. Also the
+sizing has changed, as you run refresh you can see the printed result
+for both x and y.</p>
+<p>Visually the big thing is the color fill. A random hex number is built
+and then applied to the fillStyle before the circle is built, once the
+circle is built, it is filled then then stroke is completed.</p>
+<p>A note on the number
+<a class="reference external" href="http://www.smashingmagazine.com/2012/10/04/the-code-side-of-color/">16777215</a>
+it is a mathematical sum of the 24-bit color scheme.</p>
+<div class="line-block">
+<div class="line"><a class="reference external" href="./code_snips/f_circle_random_colors.htm">Random
+Colors</a></div>
+</div>
+<div class="highlight"><pre><span></span><span class="kd">function</span> <span class="nx">myCircle</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">,</span><span class="nx">r</span><span class="p">){</span>
+ <span class="kd">var</span> <span class="nx">ranColor</span> <span class="o">=</span> <span class="s1">&#39;#&#39;</span><span class="o">+</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">16777215</span><span class="p">).</span><span class="nx">toString</span><span class="p">(</span><span class="mi">16</span><span class="p">);</span>
+ <span class="kd">var</span> <span class="nx">start</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>  <span class="kd">var</span> <span class="nx">finish</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">;</span>
+   <span class="nx">ctx</span><span class="p">.</span><span class="nx">fillStyle</span> <span class="o">=</span> <span class="nx">ranColor</span><span class="p">;</span>
+   <span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">();</span>
+   <span class="nx">ctx</span><span class="p">.</span><span class="nx">arc</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span><span class="nx">y</span><span class="p">,</span><span class="nx">r</span><span class="p">,</span><span class="nx">start</span><span class="p">,</span> <span class="nx">finish</span><span class="p">);</span>
+   <span class="nx">ctx</span><span class="p">.</span><span class="nx">fill</span><span class="p">();</span>
+   <span class="nx">ctx</span><span class="p">.</span><span class="nx">stroke</span><span class="p">();</span>
+ <span class="p">}</span>
+</pre></div>
+
+      </div>
+      <footer class="post-footer">
+        <div class="meta">
+            Posté dans «<a href="/category/javascript.html">javascript</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a><br />
+            Mots-clés:         </div>
+      </footer>
+    </article>
+      </div>
+    <aside class="page-sidebar">
+      <nav class="widget">
+      <h3>Site</h3>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/archives.html">Archives</a></li>
+          <li><a href="/about.html">A Propos</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="/category/adminstuff.html">AdminStuff</a></li>
+          <li><a href="/category/coding.html">coding</a></li>
+          <li><a href="/category/greek.html">greek</a></li>
+          <li><a href="/category/javascript.html">javascript</a></li>
+          <li><a href="/category/network.html">network</a></li>
+          <li><a href="/category/py-intro.html">py-intro</a></li>
+          <li><a href="/category/web-testing.html">web testing</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Liens</h3>
+        <ul>
+        <li><a href="http://getpelican.com/">Pelican</a></li>
+        <li><a href="http://python.org/">Python.org</a></li>
+        <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+        <li><a href="https://github.com/erantanen">My GitHub</a></li>
+        </ul>
+      </nav>
+
+</aside> 
+
+      <footer class="page-footer">
+        <p> Powered by <a href="http://pelican.readthedocs.org">Pelican</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
