@@ -23,7 +23,7 @@ The above examples can be put into a file with a copy/paste (one to a file)
     * Test it out!
 
 
-In trouble shooting I need a quick way to visualize some data so wrote a couple of quick and dirty bash scripts.
+In troubleshooting I needed a quick way to visualize some data scraping, so wrote a couple of quick and dirty bash scripts.
 Going to add more as time goes on, will be a mini-repo along with an explain how/what is going on with each script.
 
 The first one will grab a directory to read, and then out-puts size k/m/g/t along with complete path.
@@ -45,6 +45,26 @@ The first one will grab a directory to read, and then out-puts size k/m/g/t alon
           echo -n "$output"|tr '\n' ' '
          fi
        done
+
+
+
+
+And example of the output on a mac.
+
+.. code-block:: c
+
+    trident-2:~ edrantanen$ ./bash_test.sh
+    enter directory, press Enter
+    /usr/local
+    -----------------------
+
+    140K	/usr/local/bin
+     67M	/usr/local/git
+    692K	/usr/local/share
+
+
+
+
 
 
 

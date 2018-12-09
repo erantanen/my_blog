@@ -2,74 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aff634c-6f5d-41fb-9d40-42cb22406a62" name="Default" comment="update">
-      <change afterPath="$PROJECT_DIR$/code_snips/bash.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/my_blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my_blog.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/Coding/split_c_program.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/AdminStuff/bash_example.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/AdminStuff/bash_example.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/AdminStuff/jenkins_pelican" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/develop_server.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/1_example.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/1_example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/Pelican.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/Pelican.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/archives.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/argv-argc-scope-change.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/argv-argc-scope-change.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/author/ed-rantanen.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/author/ed-rantanen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/author/ed-rantanen2.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/author/ed-rantanen2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/author/ed-rantanen3.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/author/ed-rantanen3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/author/ed-rantanen4.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/author/ed-rantanen4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/author/ed-rantanen5.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/author/ed-rantanen5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/authors.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/authors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/categories.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/category/adminstuff.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/category/adminstuff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/category/coding.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/category/coding.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/category/greek.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/category/greek.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/category/javascript.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/category/javascript.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/category/network.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/category/network.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/category/py-intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/category/py-intro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/category/py-intro2.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/category/py-intro2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/category/web-testing.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/category/web-testing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/codewars-test-example.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/codewars-test-example.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/finding-serial-ports-with-c.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/finding-serial-ports-with-c.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/flask-a-mini-web-front-end.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/flask-a-mini-web-front-end.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/ftp_examples.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/ftp_examples.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/index3.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/index3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/index4.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/index4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/index5.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/index5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/init_script.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/init_script.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/ip-header-bit-fields.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/ip-header-bit-fields.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/ip-header-what-it-really-looks-like.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/ip-header-what-it-really-looks-like.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/javascript-circle-function.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/javascript-circle-function.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/javascript-circle.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/javascript-circle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/javascript-simple-animation.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/javascript-simple-animation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/javascript-with-multiple-circle-having-random-colors.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/javascript-with-multiple-circle-having-random-colors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/lesson_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/lesson_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/lesson_10.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/lesson_10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/lesson_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/lesson_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/lesson_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/lesson_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/lesson_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/lesson_4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/lesson_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/lesson_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/lesson_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/lesson_6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/lesson_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/lesson_7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/lesson_8.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/lesson_8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/lesson_9.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/lesson_9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/lesson_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/lesson_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mojolicious-logging.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/mojolicious-logging.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/mojoliciouslite-a-cool-framework.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/mojoliciouslite-a-cool-framework.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/perl-forked.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/perl-forked.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/prelim.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/prelim.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/radix.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/radix.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/the-buzz-of-fizz-code.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/the-buzz-of-fizz-code.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/tokenize-numbers-with-javascript.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/tokenize-numbers-with-javascript.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/xampp-a-great-tool.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/xampp-a-great-tool.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pelican.pid" beforeDir="false" afterPath="$PROJECT_DIR$/pelican.pid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pelicanconf.py" beforeDir="false" afterPath="$PROJECT_DIR$/pelicanconf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.rst" beforeDir="false" afterPath="$PROJECT_DIR$/readme.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv.pid" beforeDir="false" afterPath="$PROJECT_DIR$/srv.pid" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,12 +28,13 @@
     <session id="-1176412383">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -108,7 +44,7 @@
           <entry key="init_template" value="1" />
           <entry key="pid" value="1" />
           <entry key="py" value="3" />
-          <entry key="rst" value="12" />
+          <entry key="rst" value="16" />
           <entry key="sh" value="1" />
         </counts>
       </usages-collector>
@@ -117,34 +53,49 @@
           <entry key="HTML" value="3" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Python" value="3" />
-          <entry key="ReST" value="12" />
+          <entry key="ReST" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="htm" value="94" />
           <entry key="py" value="3" />
-          <entry key="rst" value="648" />
+          <entry key="rst" value="776" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="94" />
           <entry key="Python" value="3" />
-          <entry key="ReST" value="648" />
+          <entry key="ReST" value="776" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/code_snips/bash.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+            <state relative-caret-position="75">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_3.rst">
+          <provider selected="true" editor-type-id="restructured-text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/Coding/split_c_program.rst">
+          <provider selected="true" editor-type-id="restructured-text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/network/ip-header-bit-fields.rst">
+          <provider selected="true" editor-type-id="restructured-text-editor" />
         </entry>
       </file>
     </leaf>
@@ -210,12 +161,13 @@
         <option value="$PROJECT_DIR$/readme.rst" />
         <option value="$PROJECT_DIR$/code_snips/bash.htm" />
         <option value="$PROJECT_DIR$/content/AdminStuff/bash_example.rst" />
+        <option value="$PROJECT_DIR$/content/Coding/split_c_program.rst" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="34" />
-    <option name="y" value="29" />
+    <option name="x" value="160" />
+    <option name="y" value="67" />
     <option name="width" value="1755" />
     <option name="height" value="951" />
   </component>
@@ -244,18 +196,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="code_snips" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
@@ -272,7 +218,13 @@
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+              <item name="Coding" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="network" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
@@ -284,6 +236,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -707,11 +660,19 @@
       <option name="project" value="LOCAL" />
       <updated>1521664446816</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="update">
+      <created>1543796422637</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1543796422637</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-78" y="23" width="1755" height="951" extended-state="0" />
+    <frame x="160" y="67" width="1755" height="951" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20761245" />
       <window_info id="Structure" order="1" weight="0.24984501" />
@@ -761,8 +722,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code_snips/blah.txt" />
-    <entry file="file://$PROJECT_DIR$/output/category/py-intro.html" />
     <entry file="file://$PROJECT_DIR$/content/py-intro/test_1.py" />
     <entry file="file://$PROJECT_DIR$/code_snips/ascii_txt_spinner.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -925,23 +884,23 @@
     <entry file="file://$PROJECT_DIR$/content/AdminStuff/jenkins_pelican" />
     <entry file="file://$PROJECT_DIR$/develop_server.sh" />
     <entry file="file://$PROJECT_DIR$/content_inprog/jenkins_pelican.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="-433">
           <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/srv.pid">
       <provider selected="true" editor-type-id="text-editor" />
@@ -954,28 +913,28 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_2.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="82">
           <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/AdminStuff/init_template.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="36" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="128" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/AdminStuff/init_pelican.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="21" selection-end-line="24" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/code_snips/getopt_test.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -999,12 +958,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_4.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="5" selection-start-line="8" selection-end-line="14" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/code_snips/init_template">
       <provider selected="true" editor-type-id="text-editor">
@@ -1014,38 +973,44 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_1.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_3.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="98" column="5" selection-start-line="98" selection-end-line="102" selection-end-column="12" />
-        </state>
-      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/javascript/javascript-circle.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/AdminStuff/bash_example.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/javascript/javascript-circle.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/code_snips/bash.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/network/ip-header-bit-fields.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_3.rst">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="98" column="5" selection-start-line="98" selection-end-line="102" selection-end-column="12" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/Coding/split_c_program.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
