@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+    <title>raylib intro — Nyble a Day</title>
+    <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+    <link rel="shortcut icon" type="text/css" href="/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml"
+                           title="Nyble a Day — Flux Atom"
+                           href="/" /> 
+    <!--[if lte IE 8]><script src="/theme/js/html5shiv.js"></script><![endif]-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+
+    <meta name="author"   content="Ed Rantanen" />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-head">
+        <h1>
+          <a href="/index.html">Nyble a Day</a>
+        </h1>
+      </header>
+
+      <div class="page-content">
+     <article class="post content">
+      <header class="post-header">
+        <time datetime="2019-01-27T22:30:00+01:00" pubdate="pubdate">
+          Sun 27 January 2019
+        </time>
+        <h1>
+          <a rel="bookmark"
+             href="/raylib_intro.html"
+             title="Lien permanent vers «raylib intro»">
+             raylib intro
+          </a>
+        </h1>
+        <div class="meta">
+            Dans «<a href="/category/raylib.html">raylib</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a>
+        </div>
+      </header>
+      <div class="post-content"> 
+        <embed>
+   <br>
+</embed><div class="section" id="an-intro">
+<h2>an intro</h2>
+<p>raylib what is it?
+Its a raw graphics lib!</p>
+<div class="line-block">
+<div class="line">it's open source</div>
+<div class="line">it can be used with variety of languages</div>
+<div class="line">it can be ran on variety of platforms</div>
+</div>
+<div class="line-block">
+<div class="line">It has some crazy examples already built at the main site  <a class="reference external" href="https://www.raylib.com//">raylib</a></div>
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line">but what I am going to be looking at is a python version <a class="reference external" href="https://github.com/overdev/raylib-py">raylib-py</a></div>
+</div>
+<p>First step would be to &quot;pip&quot; the package, if you look at the raylib python page hit has a some directions
+for installation. At this point we are not worried about python v2 or v3 so pull what ever your python
+currently have installed.</p>
+<div class="highlight"><pre><span></span>   <span class="n">from</span> <span class="n">raylibpy</span> <span class="n">import</span> <span class="o">*</span>
+<span class="nl">ImportError</span><span class="p">:</span> <span class="n">No</span> <span class="n">module</span> <span class="n">named</span> <span class="err">&#39;</span><span class="n">raylibpy</span><span class="err">&#39;</span>
+</pre></div>
+<div class="line-block">
+<div class="line">If you are having problems with not finding raylibpy after pip'ng,</div>
+<div class="line">check your site packages, you might have say 3.5 and 3.7 installed</div>
+<div class="line">and both can have site packages.</div>
+</div>
+<p>Once that is done.</p>
+<p>Okay lets jump right in to some code, we will step through the first example.</p>
+<p>The first example we have is  <a class="reference external" href="./code_snips/basic_window.py">a basic window that prints a string of text</a></p>
+<p>How do we start</p>
+<div class="highlight"><pre><span></span><span class="n">from</span> <span class="n">raylibpy</span> <span class="n">import</span> <span class="o">*</span>
+</pre></div>
+<p>with this line we have pulled in the raylib package/library</p>
+<p>the next thing we will need to do is initiate a window, I have added a few vars to the
+line but later it will make sense why we might not want to hard code these, also within
+the init window, this is where you set the title to the window.</p>
+<div class="highlight"><pre><span></span><span class="nl">screen_width</span><span class="p">:</span> <span class="kt">int</span> <span class="o">=</span> <span class="mi">800</span>
+<span class="nl">screen_height</span><span class="p">:</span> <span class="kt">int</span> <span class="o">=</span> <span class="mi">450</span>
+
+<span class="n">init_window</span><span class="p">(</span><span class="n">screen_width</span><span class="p">,</span> <span class="n">screen_height</span><span class="p">,</span> <span class="s">&quot;the moving fox?&quot;</span><span class="p">)</span>
+</pre></div>
+<p>Just like video we can set the frames per second right now they are set to 60, this
+be adjusted up or down depending on what you are doing.</p>
+<div class="highlight"><pre><span></span><span class="n">set_target_fps</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+</pre></div>
+<p>Now building the contents of the window. There are two lines begin/end drawing.
+All the window building is taking place between these two lines.
+The clear background comes into play with the fps setting this is gets reset with every
+frame.</p>
+<div class="highlight"><pre><span></span><span class="k">while</span> <span class="n">not</span> <span class="n">window_should_close</span><span class="p">()</span><span class="o">:</span>
+
+     <span class="n">begin_drawing</span><span class="p">()</span>
+     <span class="n">clear_background</span><span class="p">(</span><span class="n">BLACK</span><span class="p">)</span>
+     <span class="n">draw_text</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">screen_width_center</span><span class="p">,</span> <span class="n">screen_height_center</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="n">GREEN</span><span class="p">)</span>
+
+     <span class="n">end_drawing</span><span class="p">()</span>
+
+ <span class="n">close_window</span><span class="p">()</span>
+</pre></div>
+<p>Run the code from the example and see how it works, change settings to see a result
+break it and then fix it.</p>
+</div>
+
+      </div>
+      <footer class="post-footer">
+        <div class="meta">
+            Posté dans «<a href="/category/raylib.html">raylib</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a><br />
+            Mots-clés:         </div>
+      </footer>
+    </article>
+      </div>
+    <aside class="page-sidebar">
+      <nav class="widget">
+      <h3>Site</h3>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/archives.html">Archives</a></li>
+          <li><a href="/about.html">A Propos</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="/category/adminstuff.html">AdminStuff</a></li>
+          <li><a href="/category/coding.html">coding</a></li>
+          <li><a href="/category/greek.html">greek</a></li>
+          <li><a href="/category/javascript.html">javascript</a></li>
+          <li><a href="/category/network.html">network</a></li>
+          <li><a href="/category/py-intro.html">py-intro</a></li>
+          <li><a href="/category/raylib.html">raylib</a></li>
+          <li><a href="/category/web-testing.html">web testing</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Liens</h3>
+        <ul>
+        <li><a href="http://getpelican.com/">Pelican</a></li>
+        <li><a href="http://python.org/">Python.org</a></li>
+        <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+        <li><a href="https://github.com/erantanen">My GitHub</a></li>
+        </ul>
+      </nav>
+
+</aside> 
+
+      <footer class="page-footer">
+        <p> Powered by <a href="http://pelican.readthedocs.org">Pelican</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

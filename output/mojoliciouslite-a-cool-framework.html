@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+    <title>Mojolicious::Lite - a cool framework — Nyble a Day</title>
+    <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+    <link rel="shortcut icon" type="text/css" href="/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml"
+                           title="Nyble a Day — Flux Atom"
+                           href="/" /> 
+    <!--[if lte IE 8]><script src="/theme/js/html5shiv.js"></script><![endif]-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+
+    <meta name="author"   content="Ed Rantanen" />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-head">
+        <h1>
+          <a href="/index.html">Nyble a Day</a>
+        </h1>
+      </header>
+
+      <div class="page-content">
+     <article class="post content">
+      <header class="post-header">
+        <time datetime="2014-10-07T00:54:00+02:00" pubdate="pubdate">
+          Tue 07 October 2014
+        </time>
+        <h1>
+          <a rel="bookmark"
+             href="/mojoliciouslite-a-cool-framework.html"
+             title="Lien permanent vers «Mojolicious::Lite - a cool framework»">
+             Mojolicious::Lite - a cool framework
+          </a>
+        </h1>
+        <div class="meta">
+            Dans «<a href="/category/web-testing.html">web testing</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a>
+        </div>
+      </header>
+      <div class="post-content"> 
+        <div class="line-block">
+<div class="line">Looking at another Framework, and have been playing with Mojolicious
+for a couple of weeks now, and having a blast with it. This framework
+using the Perl Language. If using the full blown version verses the
+lite you can work in an MVC structure, the lite can be turned into a
+fully structured MVC/MVVM or what ever quite easily.</div>
+<div class="line">Main site has a quick start that is very good -&gt; <a class="reference external" href="http://mojolicio.us/">Mojolicious
+Home</a></div>
+</div>
+<p>Once I had the framework up and running I asked a couple of quick
+questions, what is the diff from the full to the lite? How to make a few
+basic tweeks like logs, what goes into them, how to offer up some
+<a class="reference external" href="http://oss.oetiker.ch/rrdtool/">rrd</a> Data and how to get JavaScript
+with JSON functioning. Then at some point get the MVC going as well, the
+model/view/control is all separated testing and logging are also
+included as well, the lite version is all self contained in one file.</p>
+<div class="line-block">
+<div class="line">To build either:</div>
+<div class="line"><tt class="docutils literal">$ mojo generate lite_app myapp.pl $ mojo generate app MyAppcode</tt></div>
+</div>
+<div class="line-block">
+<div class="line">To launch your app use morbo in-front of &quot;myapp.pl&quot; like this.</div>
+<div class="line"><tt class="docutils literal">$ morbo myapp.pl Server available at <span class="pre">http://127.0.0.1:3000.</span></tt></div>
+</div>
+<div class="line-block">
+<div class="line">Open a browser type in &quot;<a class="reference external" href="http://localhost:3000">http://localhost:3000</a>&quot; and there you go!</div>
+<div class="line">But what if you want to try from a different machine? Then try a
+slight variation like this.
+<tt class="docutils literal">./l_myapp.pl daemon <span class="pre">-l</span> <span class="pre">http://0.0.0.0:80</span> Server available at <span class="pre">http://0.0.0.0:80</span></tt>
+When you do this though you will have to be either su or do sudo
+otherwise a socket error will be returned (tried from both Red Hat and
+OSX).</div>
+</div>
+<p>This was very short, but it would be easy to start and include the
+kitchen sink with some of the things we could answer, so the next one
+will be &quot;logs&quot; and a couple of things that I have found.</p>
+
+      </div>
+      <footer class="post-footer">
+        <div class="meta">
+            Posté dans «<a href="/category/web-testing.html">web testing</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a><br />
+            Mots-clés:         </div>
+      </footer>
+    </article>
+      </div>
+    <aside class="page-sidebar">
+      <nav class="widget">
+      <h3>Site</h3>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/archives.html">Archives</a></li>
+          <li><a href="/about.html">A Propos</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="/category/adminstuff.html">AdminStuff</a></li>
+          <li><a href="/category/coding.html">coding</a></li>
+          <li><a href="/category/greek.html">greek</a></li>
+          <li><a href="/category/javascript.html">javascript</a></li>
+          <li><a href="/category/network.html">network</a></li>
+          <li><a href="/category/py-intro.html">py-intro</a></li>
+          <li><a href="/category/raylib.html">raylib</a></li>
+          <li><a href="/category/web-testing.html">web testing</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Liens</h3>
+        <ul>
+        <li><a href="http://getpelican.com/">Pelican</a></li>
+        <li><a href="http://python.org/">Python.org</a></li>
+        <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+        <li><a href="https://github.com/erantanen">My GitHub</a></li>
+        </ul>
+      </nav>
+
+</aside> 
+
+      <footer class="page-footer">
+        <p> Powered by <a href="http://pelican.readthedocs.org">Pelican</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

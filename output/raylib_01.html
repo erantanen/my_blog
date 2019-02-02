@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+    <title>raylib basic window with item moving — Nyble a Day</title>
+    <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+    <link rel="shortcut icon" type="text/css" href="/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml"
+                           title="Nyble a Day — Flux Atom"
+                           href="/" /> 
+    <!--[if lte IE 8]><script src="/theme/js/html5shiv.js"></script><![endif]-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+
+    <meta name="author"   content="Ed Rantanen" />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-head">
+        <h1>
+          <a href="/index.html">Nyble a Day</a>
+        </h1>
+      </header>
+
+      <div class="page-content">
+     <article class="post content">
+      <header class="post-header">
+        <time datetime="2019-01-27T22:29:00+01:00" pubdate="pubdate">
+          Sun 27 January 2019
+        </time>
+        <h1>
+          <a rel="bookmark"
+             href="/raylib_01.html"
+             title="Lien permanent vers «raylib basic window with item moving»">
+             raylib basic window with item moving
+          </a>
+        </h1>
+        <div class="meta">
+            Dans «<a href="/category/raylib.html">raylib</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a>
+        </div>
+      </header>
+      <div class="post-content"> 
+        <embed>
+   <br>
+</embed><div class="section" id="something-moving">
+<h2>something moving?</h2>
+<p>Okay the intro (previous post) only had static text which is kind of boring, necessary at times but boring.</p>
+<blockquote>
+<a class="reference external" href="./code_snips/bw_mov_pixel.py">A basic window that moves a pixel?</a></blockquote>
+<p>Well its really not just a pixel, it would be to small for our example, so we are going to use a very very small
+circle.</p>
+<div class="highlight"><pre><span></span><span class="n">current_y</span> <span class="o">=</span> <span class="n">screen_height</span> <span class="o">-</span> <span class="n">shifter_y</span>
+<span class="n">draw_circle</span><span class="p">(</span><span class="n">current_x</span><span class="p">,</span> <span class="n">current_y</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">GREEN</span><span class="p">)</span>
+<span class="n">print</span><span class="p">(</span><span class="n">current_y</span><span class="p">)</span>
+<span class="n">shifter_y</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+<p>As you can see we have set up some variables to help our circle of size 2 move along the y axis, something to note
+which will help later is the print statement. Printing out our current position of y you will be able to see
+the number slowly decrementing but then it goes into negative numbers.</p>
+<blockquote>
+<div class="line-block">
+<div class="line">The size of the screen height it is 450 pixels.</div>
+</div>
+</blockquote>
+<p>And as the math goes, you have to mentally shift where y starts, the window = 800x450 (x:y) with 0:0 starting in the upper
+left corner. So if we want our dot to start at the bottom then move to the top,
+we will have to decrement against the screen height.</p>
+<p>As this circle moves upwards and out of the bound of the window, it will continue till we force a check of window
+bounds.</p>
+<blockquote>
+<a class="reference external" href="./code_snips/bw_bound_pixel.py">A simple location check for circle?</a></blockquote>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">current_y</span> <span class="o">==</span> <span class="mi">0</span><span class="o">:</span>
+     <span class="n">msg_1</span> <span class="o">=</span> <span class="err">&#39;</span><span class="n">The</span> <span class="n">circle</span> <span class="n">has</span> <span class="n">reached</span> <span class="n">the</span> <span class="n">top</span> <span class="n">of</span> <span class="n">the</span> <span class="n">screen</span><span class="err">&#39;</span>
+     <span class="n">draw_text</span><span class="p">(</span><span class="n">msg_1</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">screen_height</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">WHITE</span><span class="p">)</span>
+</pre></div>
+<p>Now the program wont continue into &quot;Infinity and beyond&quot; as Buzz Lightyear might say.</p>
+<p>With this simple check we could do several things now, make the circle appear to bounce?</p>
+<blockquote>
+<div class="line-block">
+<div class="line">Or do some other gymnastics maneuver.</div>
+<div class="line">Or we might need to add a pause to the the window?</div>
+</div>
+</blockquote>
+</div>
+
+      </div>
+      <footer class="post-footer">
+        <div class="meta">
+            Posté dans «<a href="/category/raylib.html">raylib</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a><br />
+            Mots-clés:         </div>
+      </footer>
+    </article>
+      </div>
+    <aside class="page-sidebar">
+      <nav class="widget">
+      <h3>Site</h3>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/archives.html">Archives</a></li>
+          <li><a href="/about.html">A Propos</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="/category/adminstuff.html">AdminStuff</a></li>
+          <li><a href="/category/coding.html">coding</a></li>
+          <li><a href="/category/greek.html">greek</a></li>
+          <li><a href="/category/javascript.html">javascript</a></li>
+          <li><a href="/category/network.html">network</a></li>
+          <li><a href="/category/py-intro.html">py-intro</a></li>
+          <li><a href="/category/raylib.html">raylib</a></li>
+          <li><a href="/category/web-testing.html">web testing</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Liens</h3>
+        <ul>
+        <li><a href="http://getpelican.com/">Pelican</a></li>
+        <li><a href="http://python.org/">Python.org</a></li>
+        <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+        <li><a href="https://github.com/erantanen">My GitHub</a></li>
+        </ul>
+      </nav>
+
+</aside> 
+
+      <footer class="page-footer">
+        <p> Powered by <a href="http://pelican.readthedocs.org">Pelican</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

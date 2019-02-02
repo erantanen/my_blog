@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+    <title>The Buzz of Fizz code — Nyble a Day</title>
+    <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+    <link rel="shortcut icon" type="text/css" href="/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml"
+                           title="Nyble a Day — Flux Atom"
+                           href="/" /> 
+    <!--[if lte IE 8]><script src="/theme/js/html5shiv.js"></script><![endif]-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+
+    <meta name="author"   content="Ed Rantanen" />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-head">
+        <h1>
+          <a href="/index.html">Nyble a Day</a>
+        </h1>
+      </header>
+
+      <div class="page-content">
+     <article class="post content">
+      <header class="post-header">
+        <time datetime="2012-12-19T03:30:00+01:00" pubdate="pubdate">
+          Wed 19 December 2012
+        </time>
+        <h1>
+          <a rel="bookmark"
+             href="/the-buzz-of-fizz-code.html"
+             title="Lien permanent vers «The Buzz of Fizz code»">
+             The Buzz of Fizz code
+          </a>
+        </h1>
+        <div class="meta">
+            Dans «<a href="/category/coding.html">coding</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a>
+        </div>
+      </header>
+      <div class="post-content"> 
+        <div class="line-block">
+<div class="line">Update on this:</div>
+<div class="line">&nbsp;Added tcl and c# to the group!</div>
+<div class="line">Enjoy</div>
+</div>
+<p>A friend was joking with me today about a simple test The BuzzFizz test,
+hmm?</p>
+<p>It is a simple test to find in 100 iterations the multipliers of 3 &amp; 5
+and the combinations of the two.</p>
+<p>I wrote up two quick takes on it with a while instead of a for loop.</p>
+<p>I ran both of these on -&nbsp; 3.2.0-34-generic-pae #53-Ubuntu</p>
+<embed>
+   <br>
+</embed><div class="line-block">
+<div class="line">In C:</div>
+<div class="line">#include &lt;stdio.h&gt;</div>
+</div>
+<p>int main() {</p>
+<div class="line-block">
+<div class="line">&nbsp; int i = 100;</div>
+<div class="line">&nbsp; int f3,f5;</div>
+<div class="line">&nbsp; char *flag;</div>
+</div>
+<div class="line-block">
+<div class="line">&nbsp; while(i != 0) {</div>
+<div class="line">&nbsp;&nbsp;&nbsp; f3 =i%3;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; f5 =i%5;</div>
+</div>
+<div class="line-block">
+<div class="line">&nbsp;&nbsp;&nbsp; if(f3 == 0 &amp;&amp; f5 == 0) {</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flag = &quot;combo&quot;;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; }else if(f3 == 0) {</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flag = &quot;fuzz&quot;;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; }else if(f5 == 0){</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flag = &quot;buzz&quot;;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; }else{</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; flag = &quot;nothing&quot;;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; }</div>
+</div>
+<div class="line-block">
+<div class="line">&nbsp; printf(&quot;%d&nbsp; %sn&quot;,i, flag);</div>
+<div class="line">&nbsp; --i;</div>
+<div class="line">}</div>
+</div>
+<hr class="docutils" />
+<p>In Perl:</p>
+<p>#! /usr/bin/perl -w</p>
+<p>&nbsp; $i = 100;</p>
+<div class="line-block">
+<div class="line">&nbsp; while($i != 0) {</div>
+<div class="line">&nbsp;&nbsp;&nbsp; $f3 =$i%3;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; $f5 =$i%5;</div>
+</div>
+<div class="line-block">
+<div class="line">&nbsp;&nbsp;&nbsp; if($f3 == 0 &amp;&amp; $f5 == 0) {</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $flag = &quot;combo&quot;;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; }elsif($f3 == 0) {</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $flag = &quot;fuzz&quot;;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; }elsif($f5 == 0){</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $flag = &quot;buzz&quot;;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; }else{</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $flag = &quot;nothing&quot;;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; }</div>
+</div>
+<div class="line-block">
+<div class="line">&nbsp; print(&quot;$i t$flagn&quot;);</div>
+<div class="line">&nbsp; --$i;</div>
+<div class="line">}</div>
+</div>
+<hr class="docutils" />
+<p>&nbsp;In TCL:</p>
+<p>&nbsp;#! /usr/bin/tclsh</p>
+<div class="line-block">
+<div class="line"># a simple&nbsp; tcl version of fizzbuzz</div>
+<div class="line"># prints out</div>
+<div class="line">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; on multiples of 3 prints fizz</div>
+<div class="line">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; on mulitples of 5 prints buzz</div>
+<div class="line">#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; on combined multiples of 3&amp;5 fizzbuzz</div>
+</div>
+<div class="line-block">
+<div class="line">set i 100</div>
+<div class="line">set flag &quot; &quot;</div>
+</div>
+<div class="line-block">
+<div class="line">&nbsp;while {$i != 0} {</div>
+<div class="line"><br /></div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set f3&nbsp; [expr { $i % 3}]</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set f5&nbsp; [expr { $i % 5}]</div>
+</div>
+<div class="line-block">
+<div class="line">&nbsp; if {$f3 == 0 &amp;&amp; $f5 == 0} {</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set&nbsp; flag&nbsp; &quot;fizzbuzz&quot;</div>
+<div class="line">&nbsp;&nbsp; } elseif {$f3 == 0} {</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set flag &quot;fizz&quot;</div>
+<div class="line">&nbsp;&nbsp; } elseif {$f5 == 0} {</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set flag &quot;buzz&quot;</div>
+<div class="line">&nbsp;&nbsp; } else {</div>
+<div class="line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; set flag &quot;&nbsp; &quot;</div>
+<div class="line">&nbsp;&nbsp; }</div>
+<div class="line"><br /></div>
+</div>
+<p>&nbsp; puts &quot;$i t$f3 t$flag&quot;</p>
+<div class="line-block">
+<div class="line">&nbsp; incr i -1</div>
+<div class="line">&nbsp;}</div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line">&nbsp;In C#:</div>
+<div class="line">using System;</div>
+</div>
+<div class="line-block">
+<div class="line">namespace fizzbuzz</div>
+<div class="line">{</div>
+<div class="line">&nbsp;&nbsp;&nbsp; class MainClass</div>
+<div class="line">&nbsp;&nbsp;&nbsp; {</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; public static void Main (string[] args)</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</div>
+<div class="line"><br /></div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; int i = 100;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; int f3, f5;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; string flag;</div>
+<div class="line"><br /></div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; while(--i != 0 ) {</div>
+<div class="line"><br /></div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; f3 = i % 3;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; f5 = i % 5;</div>
+<div class="line"><br /></div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if(f3 == 0 &amp;&amp; f5 == 0) {</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; flag = &quot;fizzbuzz&quot;;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }else if(f3 == 0) {</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; flag = &quot;fizz&quot;;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }else if(f5 == 0) {</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; flag = &quot;buzz&quot;;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }&nbsp; else {</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; flag = null;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if(flag != null){</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Console.WriteLine (&quot; {0}&quot; +&quot;t&quot; +&quot;{1}&quot;, i, flag);</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; //--i;</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</div>
+<div class="line">&nbsp;&nbsp;&nbsp; }</div>
+<div class="line">}</div>
+</div>
+
+      </div>
+      <footer class="post-footer">
+        <div class="meta">
+            Posté dans «<a href="/category/coding.html">coding</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a><br />
+            Mots-clés:         </div>
+      </footer>
+    </article>
+      </div>
+    <aside class="page-sidebar">
+      <nav class="widget">
+      <h3>Site</h3>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/archives.html">Archives</a></li>
+          <li><a href="/about.html">A Propos</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="/category/adminstuff.html">AdminStuff</a></li>
+          <li><a href="/category/coding.html">coding</a></li>
+          <li><a href="/category/greek.html">greek</a></li>
+          <li><a href="/category/javascript.html">javascript</a></li>
+          <li><a href="/category/network.html">network</a></li>
+          <li><a href="/category/py-intro.html">py-intro</a></li>
+          <li><a href="/category/raylib.html">raylib</a></li>
+          <li><a href="/category/web-testing.html">web testing</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Liens</h3>
+        <ul>
+        <li><a href="http://getpelican.com/">Pelican</a></li>
+        <li><a href="http://python.org/">Python.org</a></li>
+        <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+        <li><a href="https://github.com/erantanen">My GitHub</a></li>
+        </ul>
+      </nav>
+
+</aside> 
+
+      <footer class="page-footer">
+        <p> Powered by <a href="http://pelican.readthedocs.org">Pelican</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

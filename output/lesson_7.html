@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+    <title>PY-Into 7 — Nyble a Day</title>
+    <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+    <link rel="shortcut icon" type="text/css" href="/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml"
+                           title="Nyble a Day — Flux Atom"
+                           href="/" /> 
+    <!--[if lte IE 8]><script src="/theme/js/html5shiv.js"></script><![endif]-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+
+    <meta name="author"   content="Ed Rantanen" />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-head">
+        <h1>
+          <a href="/index.html">Nyble a Day</a>
+        </h1>
+      </header>
+
+      <div class="page-content">
+     <article class="post content">
+      <header class="post-header">
+        <time datetime="2017-04-01T22:33:00+02:00" pubdate="pubdate">
+          Sat 01 April 2017
+        </time>
+        <h1>
+          <a rel="bookmark"
+             href="/lesson_7.html"
+             title="Lien permanent vers «PY-Into 7»">
+             PY-Into 7
+          </a>
+        </h1>
+        <div class="meta">
+            Dans «<a href="/category/py-intro.html">py-intro</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a>
+        </div>
+      </header>
+      <div class="post-content"> 
+        <embed>
+   <br>
+</embed><div class="section" id="newspaper">
+<h2>newspaper</h2>
+<p>newspaper is library that we will use to pull data from media sites. Follow the link, read and try the intro examples.</p>
+<p><a class="reference external" href="https://github.com/codelucas/newspaper">newspaper</a></p>
+<p>With this library we will be pulling the data in to a variable for parsing (searching) that will later be analyzed
+for some criteria.</p>
+<p>Now that you have experimented with news paper, build a function that calls it and has an output.</p>
+<embed>
+   <br>
+</embed></div>
+<div class="section" id="google-finance">
+<h2>google finance</h2>
+<blockquote>
+<div class="line-block">
+<div class="line">How to capture real time stock data?</div>
+<div class="line">We can use an API (application program interface) that Google created to do pulls.</div>
+</div>
+</blockquote>
+<p><a class="reference external" href="https://github.com/hongtaocai/googlefinance">google finance at github</a></p>
+<div class="highlight"><pre><span></span><span class="n">from</span> <span class="n">googlefinance</span> <span class="n">import</span> <span class="n">getQuotes</span>
+<span class="n">import</span> <span class="n">json</span>
+
+<span class="n">print</span><span class="p">(</span><span class="n">json</span><span class="p">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">getQuotes</span><span class="p">(</span><span class="err">&#39;</span><span class="n">AAPL</span><span class="err">&#39;</span><span class="p">),</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+<p>Lets try the above code out in pycharm.</p>
+<blockquote>
+<div class="line-block">
+<div class="line">This code is very simple, and static but by using the elements that we have learned so far:</div>
+</div>
+<blockquote>
+<ul class="simple">
+<li>function creation</li>
+<li>looping</li>
+<li>list creation</li>
+<li>key/value pair</li>
+</ul>
+</blockquote>
+</blockquote>
+<p>Extending the code to be more dynamic/flexible and useful.</p>
+<embed>
+   <br>
+</embed><p><a class="reference external" href="lesson_8.html">Moving forward to Lesson 8</a></p>
+<p><a class="reference external" href="lesson_6.html">Moving back to Lesson 6</a></p>
+</div>
+
+      </div>
+      <footer class="post-footer">
+        <div class="meta">
+            Posté dans «<a href="/category/py-intro.html">py-intro</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a><br />
+            Mots-clés:         </div>
+      </footer>
+    </article>
+      </div>
+    <aside class="page-sidebar">
+      <nav class="widget">
+      <h3>Site</h3>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/archives.html">Archives</a></li>
+          <li><a href="/about.html">A Propos</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="/category/adminstuff.html">AdminStuff</a></li>
+          <li><a href="/category/coding.html">coding</a></li>
+          <li><a href="/category/greek.html">greek</a></li>
+          <li><a href="/category/javascript.html">javascript</a></li>
+          <li><a href="/category/network.html">network</a></li>
+          <li><a href="/category/py-intro.html">py-intro</a></li>
+          <li><a href="/category/raylib.html">raylib</a></li>
+          <li><a href="/category/web-testing.html">web testing</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Liens</h3>
+        <ul>
+        <li><a href="http://getpelican.com/">Pelican</a></li>
+        <li><a href="http://python.org/">Python.org</a></li>
+        <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+        <li><a href="https://github.com/erantanen">My GitHub</a></li>
+        </ul>
+      </nav>
+
+</aside> 
+
+      <footer class="page-footer">
+        <p> Powered by <a href="http://pelican.readthedocs.org">Pelican</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

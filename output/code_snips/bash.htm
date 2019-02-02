@@ -1,0 +1,50 @@
+
+<body><pre><xmp>
+
+#
+# some bash snippets
+#
+# enjoy
+#
+###########################
+
+
+echo "enter directory, press Enter"
+read dir
+array=($(ls  "$dir"))
+echo -e "-----------------------\n"
+
+for elm in "${array[@]}";
+  do
+    cat_elm=$(echo ${dir}/${elm})
+    if [ -d "${cat_elm}" ]
+    then
+      output= eval du -sh ${cat_elm}
+      echo -n "$output"|tr '\n' ' '
+     fi
+   done
+
+###########################
+
+echo "enter word to find, press Enter"
+read word
+array=($(locate  "$word"))
+echo -e "-----------------------\n"
+
+for elm in "${array[@]}";
+  do
+   output= eval  ls -lh "$elm"
+   echo "$output" |tr '\n' ' '
+  done
+
+###########################
+
+ ls -alh| tr -s ' '|cut -d ' ' -f 1,2,5-9
+
+###########################
+
+@echo $(shell printenv|grep TARGET_CPU| cut -d'=' -f2)
+
+</xmp>
+</pre>
+</body>

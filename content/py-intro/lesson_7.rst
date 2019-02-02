@@ -1,6 +1,6 @@
 PY-Into 7
 #########
-:date: 2017-04-1 23:37
+:date: 2017-04-1 22:33
 :author: Ed Rantanen
 :category: py-intro
 :slug: lesson_7

@@ -1,6 +1,6 @@
 PY-Into 1
 #########
-:date: 2017-04-1 23:31
+:date: 2017-04-1 22:49
 :author: Ed Rantanen
 :category: py-intro
 :slug: lesson_1

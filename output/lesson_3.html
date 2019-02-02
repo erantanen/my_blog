@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+    <title>PY-Into 3 — Nyble a Day</title>
+    <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+    <link rel="shortcut icon" type="text/css" href="/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml"
+                           title="Nyble a Day — Flux Atom"
+                           href="/" /> 
+    <!--[if lte IE 8]><script src="/theme/js/html5shiv.js"></script><![endif]-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+
+    <meta name="author"   content="Ed Rantanen" />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-head">
+        <h1>
+          <a href="/index.html">Nyble a Day</a>
+        </h1>
+      </header>
+
+      <div class="page-content">
+     <article class="post content">
+      <header class="post-header">
+        <time datetime="2017-04-01T22:47:00+02:00" pubdate="pubdate">
+          Sat 01 April 2017
+        </time>
+        <h1>
+          <a rel="bookmark"
+             href="/lesson_3.html"
+             title="Lien permanent vers «PY-Into 3»">
+             PY-Into 3
+          </a>
+        </h1>
+        <div class="meta">
+            Dans «<a href="/category/py-intro.html">py-intro</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a>
+        </div>
+      </header>
+      <div class="post-content"> 
+        <embed>
+   <br>
+</embed><div class="section" id="strings">
+<h2>strings</h2>
+<dl class="docutils">
+<dt>Python has some really interesting tools to work with strings</dt>
+<dd><em>strings</em>  are groups of letters and/or numbers</dd>
+</dl>
+<div class="highlight"><pre><span></span><span class="n">blah</span> <span class="o">=</span> <span class="s">&quot;Beam Me Up, Scotty&quot;</span>
+<span class="n">blah</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">blah</span><span class="p">[</span><span class="o">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">blah</span><span class="p">[</span><span class="o">:-</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">blah</span><span class="p">[</span><span class="o">::-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+<div class="line-block">
+<div class="line">The -1 syntax is quite interesting, try it in the python shell.</div>
+<div class="line">What is the result?</div>
+<div class="line">Doing a quick test what other variations can you see?</div>
+</div>
+<p>When you have more than one string or word you want to put together then you cat (concatenation) them  like this.</p>
+<div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="s">&quot;hello&quot;</span>
+<span class="n">c</span> <span class="o">=</span> <span class="s">&quot;world&quot;</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">b</span> <span class="o">+</span> <span class="n">C</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="s">&quot;hello&quot;</span> <span class="o">+</span> <span class="s">&quot;world&quot;</span>
+</pre></div>
+<ul class="simple">
+<li>You can not cat different types like str and int</li>
+<li>Perform a cast on one or other</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">c</span> <span class="o">=</span> <span class="s">&quot; dog&quot;</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">str</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">+</span> <span class="n">C</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">str</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; dog</span><span class="se">\n</span><span class="s">&quot;</span>
+<span class="n">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+<ul class="simple">
+<li>&quot;n&quot; when working with strings sometimes you might want a new line</li>
+<li>&quot;t&quot; or maybe a tab.</li>
+</ul>
+<p>The &quot;\&quot; is called an escape character. What other escape sequences are there?</p>
+<hr class="docutils" />
+<p>Now that we have a string how do we write that string to a file? Or how do we read from a file? Well ...</p>
+<div class="highlight"><pre><span></span><span class="n">FH</span> <span class="o">=</span> <span class="n">open</span><span class="p">(</span><span class="s">&quot;blah.txt&quot;</span><span class="p">,</span> <span class="s">&quot;w&quot;</span><span class="p">)</span>
+<span class="n">FH</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">&quot;Space… the final frontier.&quot;</span><span class="p">)</span>
+<span class="n">FH</span><span class="p">.</span><span class="n">close</span>
+</pre></div>
+<p>A different way to open a file, this one does not require a close.</p>
+<div class="highlight"><pre><span></span><span class="n">with</span> <span class="n">open</span><span class="p">(</span><span class="s">&quot;blah.txt&quot;</span><span class="p">,</span> <span class="s">&quot;w&quot;</span><span class="p">)</span> <span class="n">as</span> <span class="nl">FH</span><span class="p">:</span>
+    <span class="n">FH</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">&quot;Space… the final frontier.&quot;</span><span class="p">)</span>
+    <span class="n">FH</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+<div class="line-block">
+<div class="line">I put an error in the code do you see it?</div>
+<div class="line">Hint &quot;write&quot; only utilizes string type unless its called out.</div>
+<div class="line">How would we fix this?</div>
+</div>
+<blockquote>
+<a class="reference external" href="./code_snips/file_open.py">example: a quick fix?</a></blockquote>
+<p>Now reading and appending are similar to writing, but we change out the &quot;w&quot; with an &quot;r&quot; or &quot;a&quot; now if we want to
+read something it will have to be captured by a variable.</p>
+<div class="highlight"><pre><span></span><span class="n">FH</span> <span class="o">=</span> <span class="n">open</span><span class="p">(</span><span class="s">&quot;blah.txt&quot;</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">)</span>
+<span class="n">file_input</span> <span class="o">=</span> <span class="n">FH</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">FH</span><span class="p">.</span><span class="n">close</span>
+</pre></div>
+<p>Once we have the variable file_input with some data what should we do with it now?</p>
+<div class="line-block">
+<div class="line">Test this out with the python shell!</div>
+</div>
+<embed>
+   <br>
+</embed><p><a class="reference external" href="lesson_4.html">Moving forward to Lesson 4</a></p>
+<p><a class="reference external" href="lesson_2.html">Moving back to Lesson 2</a></p>
+</div>
+
+      </div>
+      <footer class="post-footer">
+        <div class="meta">
+            Posté dans «<a href="/category/py-intro.html">py-intro</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a><br />
+            Mots-clés:         </div>
+      </footer>
+    </article>
+      </div>
+    <aside class="page-sidebar">
+      <nav class="widget">
+      <h3>Site</h3>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/archives.html">Archives</a></li>
+          <li><a href="/about.html">A Propos</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="/category/adminstuff.html">AdminStuff</a></li>
+          <li><a href="/category/coding.html">coding</a></li>
+          <li><a href="/category/greek.html">greek</a></li>
+          <li><a href="/category/javascript.html">javascript</a></li>
+          <li><a href="/category/network.html">network</a></li>
+          <li><a href="/category/py-intro.html">py-intro</a></li>
+          <li><a href="/category/raylib.html">raylib</a></li>
+          <li><a href="/category/web-testing.html">web testing</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Liens</h3>
+        <ul>
+        <li><a href="http://getpelican.com/">Pelican</a></li>
+        <li><a href="http://python.org/">Python.org</a></li>
+        <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+        <li><a href="https://github.com/erantanen">My GitHub</a></li>
+        </ul>
+      </nav>
+
+</aside> 
+
+      <footer class="page-footer">
+        <p> Powered by <a href="http://pelican.readthedocs.org">Pelican</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

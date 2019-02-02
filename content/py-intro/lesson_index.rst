@@ -1,6 +1,6 @@
 index
 #####
-:date: 3000-04-1 22:00
+:date: 2017-04-1 23:50
 :author: Ed Rantanen
 :category: py-intro
 :slug: lesson_index

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8" />
+    <title>Finding Serial Ports with C# — Nyble a Day</title>
+    <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+    <link rel="shortcut icon" type="text/css" href="/favicon.ico" />
+    <link rel="alternate" type="application/atom+xml"
+                           title="Nyble a Day — Flux Atom"
+                           href="/" /> 
+    <!--[if lte IE 8]><script src="/theme/js/html5shiv.js"></script><![endif]-->
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+
+    <meta name="author"   content="Ed Rantanen" />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-head">
+        <h1>
+          <a href="/index.html">Nyble a Day</a>
+        </h1>
+      </header>
+
+      <div class="page-content">
+     <article class="post content">
+      <header class="post-header">
+        <time datetime="2013-01-03T17:44:00+01:00" pubdate="pubdate">
+          Thu 03 January 2013
+        </time>
+        <h1>
+          <a rel="bookmark"
+             href="/finding-serial-ports-with-c.html"
+             title="Lien permanent vers «Finding Serial Ports with C#»">
+             Finding Serial Ports with C#
+          </a>
+        </h1>
+        <div class="meta">
+            Dans «<a href="/category/network.html">network</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a>
+        </div>
+      </header>
+      <div class="post-content"> 
+        <p>Before starting another project that utilizes an Arduino and a JY-MCU
+Bluetooth module,&nbsp; a quick little experiment was done with C# on
+different platforms.&nbsp; Also I used MonoDevelop and MS Visual Studio as
+the build mechanism (to see if they might make a difference as well).
+The quick experiments showed me a couple of things, what the different
+os's are able to show of the serial ports with same code, and what is
+being offered in the way of data arrays.&nbsp; Further investigating, which I
+do not show here with the System.IO and SerialPort has many different
+layers that in themselves deserve quick short write-ups.</p>
+<p>The code is very simple:</p>
+<div class="line-block">
+<div class="line">using System;</div>
+<div class="line">using System.IO.Ports;</div>
+<div class="line">using System.Linq;</div>
+</div>
+<div class="line-block">
+<div class="line">namespace serial_test</div>
+<div class="line">{</div>
+<div class="line">&nbsp;&nbsp;&nbsp; class MainClass</div>
+<div class="line">&nbsp;&nbsp;&nbsp; {</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; public static void Main (string[] args)</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; var port_list = SerialPort.GetPortNames ();</div>
+</div>
+<div class="line-block">
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; foreach (var port in port_list) {</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Console.WriteLine (port);</div>
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</div>
+</div>
+<div class="line-block">
+<div class="line">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</div>
+<div class="line">&nbsp;&nbsp;&nbsp; }</div>
+<div class="line">}</div>
+</div>
+<p>When ran with Visual Studio on Windows 7, the output was an empty array
+of data,&nbsp; in another version of code on the Win 7 box I checked for null
+at different levels. Each time it came back as 0.</p>
+<div style="clear: both; text-align: center;"></div><p>This same code ran on OSX is interesting because of the result showing
+the Bluetooth</p>
+<div style="clear: both; text-align: center;"><p><a class="reference external" href="http://pseudopoint.net/wp/wp-content/uploads/2013/01/serial_result3.png"><img alt="image0" src="http://pseudopoint.net/wp/wp-content/uploads/2013/01/serial_result3.png" /></a></p>
+</div><p>&nbsp;And a the same code ran in Ubuntu inside of Virtual Box VM on OSX.</p>
+<div style="clear: both; text-align: center;"><p><a class="reference external" href="http://pseudopoint.net/wp/wp-content/uploads/2013/01/serial_result2.png"><img alt="image1" src="http://pseudopoint.net/wp/wp-content/uploads/2013/01/serial_result2.png" /></a></p>
+</div><div style="clear: both; text-align: center;"></div>
+      </div>
+      <footer class="post-footer">
+        <div class="meta">
+            Posté dans «<a href="/category/network.html">network</a>» 
+            par <a href="/author/ed-rantanen.html">Ed Rantanen</a><br />
+            Mots-clés:         </div>
+      </footer>
+    </article>
+      </div>
+    <aside class="page-sidebar">
+      <nav class="widget">
+      <h3>Site</h3>
+        <ul>
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/archives.html">Archives</a></li>
+          <li><a href="/about.html">A Propos</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="/category/adminstuff.html">AdminStuff</a></li>
+          <li><a href="/category/coding.html">coding</a></li>
+          <li><a href="/category/greek.html">greek</a></li>
+          <li><a href="/category/javascript.html">javascript</a></li>
+          <li><a href="/category/network.html">network</a></li>
+          <li><a href="/category/py-intro.html">py-intro</a></li>
+          <li><a href="/category/raylib.html">raylib</a></li>
+          <li><a href="/category/web-testing.html">web testing</a></li>
+        </ul>
+      </nav>
+
+      <nav class="widget">
+        <h3>Liens</h3>
+        <ul>
+        <li><a href="http://getpelican.com/">Pelican</a></li>
+        <li><a href="http://python.org/">Python.org</a></li>
+        <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+        <li><a href="https://github.com/erantanen">My GitHub</a></li>
+        </ul>
+      </nav>
+
+</aside> 
+
+      <footer class="page-footer">
+        <p> Powered by <a href="http://pelican.readthedocs.org">Pelican</a></p>
+      </footer>
+    </div>
+  </body>
+</html>

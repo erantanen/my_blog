@@ -2,16 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aff634c-6f5d-41fb-9d40-42cb22406a62" name="Default" comment="update">
+      <change afterPath="$PROJECT_DIR$/code_snips/basic_window.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code_snips/bw_bound_pixel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code_snips/bw_mov_pixel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/raylib/raylib_01.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/raylib/raylib_index.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/raylib/raylib_intro.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_1.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_10.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_10.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_2.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_3.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_4.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_4.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_5.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_5.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_6.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_6.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_7.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_7.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_8.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_8.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_9.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_9.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/archives.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/author/ed-rantanen.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/author/ed-rantanen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/author/ed-rantanen2.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/author/ed-rantanen2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/category/py-intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/category/py-intro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/category/py-intro2.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/category/py-intro2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/lesson_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/lesson_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/py-intro/prelim.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/prelim.rst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,15 +44,18 @@
     <session id="-1176412383">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="12" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.24" value="2" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -54,8 +66,8 @@
           <entry key="html" value="4" />
           <entry key="init_template" value="1" />
           <entry key="pid" value="1" />
-          <entry key="py" value="5" />
-          <entry key="rst" value="20" />
+          <entry key="py" value="8" />
+          <entry key="rst" value="41" />
           <entry key="sh" value="1" />
         </counts>
       </usages-collector>
@@ -63,22 +75,22 @@
         <counts>
           <entry key="HTML" value="7" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="5" />
-          <entry key="ReST" value="20" />
+          <entry key="Python" value="8" />
+          <entry key="ReST" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="htm" value="94" />
-          <entry key="py" value="18" />
-          <entry key="rst" value="798" />
+          <entry key="py" value="26" />
+          <entry key="rst" value="4893" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="94" />
-          <entry key="Python" value="18" />
-          <entry key="ReST" value="798" />
+          <entry key="Python" value="26" />
+          <entry key="ReST" value="4893" />
         </counts>
       </usages-collector>
     </session>
@@ -86,8 +98,26 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_index.rst">
+        <entry file="file://$PROJECT_DIR$/content/raylib/raylib_01.rst">
           <provider selected="true" editor-type-id="restructured-text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code_snips/bw_bound_pixel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="30" selection-start-line="22" selection-start-column="1" selection-end-line="24" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code_snips/bw_mov_pixel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -108,38 +138,27 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/code_snips/py_intro_test_1.htm.py" />
         <option value="$PROJECT_DIR$/code_snips/py_intro_test_1.py" />
         <option value="$PROJECT_DIR$/code_snips/an_rec_simple.htm" />
         <option value="$PROJECT_DIR$/theme/dev-random/static/css/main.css" />
-        <option value="$PROJECT_DIR$/content/py-intro/prelim.rst" />
         <option value="$PROJECT_DIR$/code_snips/comments_test.py" />
         <option value="$PROJECT_DIR$/code_snips/comment.py" />
         <option value="$PROJECT_DIR$/content/AdminStuff/init_pelican.rst" />
         <option value="$PROJECT_DIR$/code_snips/blah.txt" />
         <option value="$PROJECT_DIR$/code_snips/getopt_test.py" />
         <option value="$PROJECT_DIR$/output/category/py-intro.html" />
-        <option value="$PROJECT_DIR$/content/py-intro/lesson_4.rst" />
-        <option value="$PROJECT_DIR$/content/py-intro/lesson_6.rst" />
         <option value="$PROJECT_DIR$/content/py-intro/test_1.py" />
         <option value="$PROJECT_DIR$/code_snips/ascii_txt_spinner.py" />
         <option value="$PROJECT_DIR$/code_snips/excel_example.py" />
         <option value="$PROJECT_DIR$/code_snips/py_intro_fizbuz.py" />
         <option value="$PROJECT_DIR$/code_snips/vert_sin_moving_string.py" />
-        <option value="$PROJECT_DIR$/content/py-intro/lesson_3.rst" />
         <option value="$PROJECT_DIR$/code_snips/file_open.py" />
         <option value="$PROJECT_DIR$/content/Coding/the-buzz-of-fizz-code.rst" />
-        <option value="$PROJECT_DIR$/content/py-intro/lesson_5.rst" />
         <option value="$PROJECT_DIR$/code_snips/boolean_test.py" />
-        <option value="$PROJECT_DIR$/content/py-intro/lesson_2.rst" />
-        <option value="$PROJECT_DIR$/content/py-intro/lesson_8.rst" />
         <option value="$PROJECT_DIR$/code_snips/blah.py" />
-        <option value="$PROJECT_DIR$/content/py-intro/lesson_9.rst" />
         <option value="$PROJECT_DIR$/content/py-intro/lesson_10.rst.py" />
-        <option value="$PROJECT_DIR$/content/py-intro/lesson_10.rst" />
         <option value="$PROJECT_DIR$/code_snips/stock_capture.py" />
-        <option value="$PROJECT_DIR$/content/py-intro/lesson_7.rst" />
         <option value="$PROJECT_DIR$/content/WebTesting/flask-a-mini-web-front-end.rst" />
         <option value="$PROJECT_DIR$/code_snips/init_template" />
         <option value="$PROJECT_DIR$/content/AdminStuff/init_template.rst" />
@@ -153,16 +172,31 @@
         <option value="$PROJECT_DIR$/content/Coding/split_c_program.rst" />
         <option value="$PROJECT_DIR$/theme/pelican-plugins/category_meta.py" />
         <option value="$PROJECT_DIR$/pelicanconf.py" />
-        <option value="$PROJECT_DIR$/content/py-intro/lesson_1.rst" />
         <option value="$PROJECT_DIR$/content/py-intro/lesson_index.rst" />
+        <option value="$PROJECT_DIR$/content/py-intro/lesson_1.rst" />
+        <option value="$PROJECT_DIR$/content/py-intro/lesson_2.rst" />
+        <option value="$PROJECT_DIR$/content/py-intro/lesson_3.rst" />
+        <option value="$PROJECT_DIR$/content/py-intro/lesson_4.rst" />
+        <option value="$PROJECT_DIR$/content/py-intro/lesson_5.rst" />
+        <option value="$PROJECT_DIR$/content/py-intro/lesson_6.rst" />
+        <option value="$PROJECT_DIR$/content/py-intro/lesson_7.rst" />
+        <option value="$PROJECT_DIR$/content/py-intro/lesson_8.rst" />
+        <option value="$PROJECT_DIR$/content/py-intro/prelim.rst" />
+        <option value="$PROJECT_DIR$/content/py-intro/lesson_9.rst" />
+        <option value="$PROJECT_DIR$/content/py-intro/lesson_10.rst" />
+        <option value="$PROJECT_DIR$/code_snips/basic_window.py" />
+        <option value="$PROJECT_DIR$/code_snips/bw_mov_pixel.py" />
+        <option value="$PROJECT_DIR$/content/raylib/raylib_index.rst" />
+        <option value="$PROJECT_DIR$/content/raylib/raylib_intro.rst" />
+        <option value="$PROJECT_DIR$/content/raylib/raylib_01.rst" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="150" />
-    <option name="width" value="1361" />
-    <option name="height" value="686" />
+    <option name="x" value="296" />
+    <option name="y" value="23" />
+    <option name="width" value="1434" />
+    <option name="height" value="909" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -199,13 +233,18 @@
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="code_snips" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="Coding" type="462c0819:PsiDirectoryNode" />
+              <item name="raylib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -220,6 +259,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code_snips" />
       <recent name="$PROJECT_DIR$/content/py-intro" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -238,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.stock_capture">
+  <component name="RunManager" selected="Python.basic_window">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -271,6 +311,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code_snips/ascii_txt_spinner.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="basic_window" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="my_blog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code_snips" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code_snips/basic_window.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -342,27 +403,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="my_blog" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/content/py-intro" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/content/py-intro/test_1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Nosetests">
       <module name="my_blog" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -408,19 +448,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.test_1" />
       <item itemvalue="Python.ascii_txt_spinner" />
       <item itemvalue="Python.boolean_test" />
       <item itemvalue="Python.blah" />
       <item itemvalue="Python.stock_capture" />
+      <item itemvalue="Python.basic_window" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.basic_window" />
         <item itemvalue="Python.stock_capture" />
         <item itemvalue="Python.blah" />
         <item itemvalue="Python.boolean_test" />
         <item itemvalue="Python.ascii_txt_spinner" />
-        <item itemvalue="Python.test_1" />
       </list>
     </recent_temporary>
   </component>
@@ -659,18 +699,26 @@
       <option name="project" value="LOCAL" />
       <updated>1544393107742</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="update">
+      <created>1548034940568</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1548034940568</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="23" width="1361" height="951" extended-state="0" />
+    <frame x="296" y="23" width="1434" height="909" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15003538" />
       <window_info id="Structure" order="1" weight="0.24984501" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.16339067" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48189208" weight="0.20481928" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48189208" weight="0.30855018" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -713,88 +761,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/code_snips/blah.py" />
-    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_10.rst.py" />
-    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_9.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_10.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code_snips/an_circle_simple.htm">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code_snips/vert_sin_moving_string.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code_snips/boolean_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_6.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code_snips/stock_capture.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" selection-start-line="4" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_7.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code_snips/f_circle_random_colors.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/WebTesting/flask-a-mini-web-front-end.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/py-intro/prelim.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/AdminStuff/ftp_examples.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/AdminStuff/about.rst">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -846,14 +812,6 @@
     <entry file="file://$PROJECT_DIR$/srv.pid">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_2.rst">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/AdminStuff/init_template.rst">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -891,14 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_4.rst">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="5" selection-start-line="8" selection-end-line="14" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/code_snips/init_template">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -920,9 +870,7 @@
     <entry file="file://$PROJECT_DIR$/content/network/ip-header-bit-fields.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/py-intro/index.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/content/py-intro/index.rst" />
     <entry file="file://$PROJECT_DIR$/theme/dev-random/templates/category.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -930,6 +878,46 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/Coding/split_c_program.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code_snips/bash.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/py-intro/index.ext" />
+    <entry file="file://$PROJECT_DIR$/theme/pelican-plugins/category_meta.py" />
+    <entry file="file://$PROJECT_DIR$/output/index2.html" />
+    <entry file="file://$PROJECT_DIR$/output/index.html" />
+    <entry file="file://$PROJECT_DIR$/pelicanconf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_8.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_7.rst">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_6.rst">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_5.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_3.rst">
@@ -940,31 +928,29 @@
       </provider>
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/code_snips/bash.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_10.rst">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/py-intro/index.ext">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/theme/pelican-plugins/category_meta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
-          <folding>
-            <element signature="e#836#863#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_9.rst">
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-end-line="45" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/output/index2.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/content/py-intro/prelim.rst">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="59" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_1.rst">
       <provider editor-type-id="text-editor">
@@ -974,12 +960,24 @@
       </provider>
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pelicanconf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_2.rst">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_4.rst">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" selection-start-line="8" selection-end-line="14" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/raylib/index.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_index.rst">
       <provider editor-type-id="text-editor">
@@ -987,6 +985,36 @@
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/raylib/raylib_index.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/raylib/raylib_intro.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code_snips/basic_window.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code_snips/bw_mov_pixel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code_snips/bw_bound_pixel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="30" selection-start-line="22" selection-start-column="1" selection-end-line="24" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/raylib/raylib_01.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
   </component>

@@ -1,6 +1,6 @@
 PY-Prelim
 #########
-:date: 2017-04-1 23:30
+:date: 2017-04-1 22:50
 :author: Ed Rantanen
 :category: py-intro
 :slug: prelim
