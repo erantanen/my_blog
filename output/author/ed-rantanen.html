@@ -33,8 +33,8 @@
           <h1>
             <a rel="bookmark"
                href="/raylib_index.html"
-               title="Lien permanent vers «index»">
-               index
+               title="Lien permanent vers «raylib-index»">
+               raylib-index
             </a>
           </h1>
           <div class="meta">
@@ -62,6 +62,16 @@
 <dt><a class="reference external" href="raylib_01.html">Lesson 1</a></dt>
 <dd><div class="first last line-block">
 <div class="line">getting something moving in a basic window</div>
+</div>
+</dd>
+</dl>
+</blockquote>
+<hr class="docutils" />
+<blockquote>
+<dl class="docutils">
+<dt><a class="reference external" href="raylib_02.html">Lesson 2</a></dt>
+<dd><div class="first last line-block">
+<div class="line">Adding a pause to the environment</div>
 </div>
 </dd>
 </dl>
@@ -123,8 +133,8 @@ Its a raw graphics lib!</p>
           <h1>
             <a rel="bookmark"
                href="/raylib_01.html"
-               title="Lien permanent vers «raylib basic window with item moving»">
-               raylib basic window with item moving
+               title="Lien permanent vers «raylibib basic window with item moving»">
+               raylibib basic window with item moving
             </a>
           </h1>
           <div class="meta">
@@ -144,6 +154,46 @@ Its a raw graphics lib!</p>
         </div>
         <footer class="post-footer">
           <a class="readmore" href="/raylib_01.html">Lire la suite...</a>
+        </footer>
+      </article>
+        
+      <article class="post">
+        <header class="post-header">
+          <time datetime="2019-01-27T22:28:00+01:00" pubdate="pubdate">
+            Sun 27 January 2019
+          </time>
+          <h1>
+            <a rel="bookmark"
+               href="/raylib_02.html"
+               title="Lien permanent vers «raylib basic window with a pause»">
+               raylib basic window with a pause
+            </a>
+          </h1>
+          <div class="meta">
+              Dans «<a href="/category/raylib.html">raylib</a>» 
+              par <a href="/author/ed-rantanen.html">Ed Rantanen</a>
+          </div>
+        </header>
+        <div class="post-content"> 
+          <embed>
+   <br>
+</embed><div class="section" id="putting-in-a-pause">
+<h2>putting in a pause?</h2>
+<p>How do do we put a pause into the graphics?
+The complete pause can be seen here.</p>
+<blockquote>
+<a class="reference external" href="./code_snips/bw_bound_pixel_with_pause.py">A pause?</a></blockquote>
+<p>The base logic is here.</p>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">is_key_pressed</span><span class="p">(</span><span class="n">KEY_P</span><span class="p">)</span><span class="o">:</span>
+    <span class="k">if</span> <span class="nl">pause</span><span class="p">:</span>
+        <span class="n">pause</span> <span class="o">=</span> <span class="n">False</span>
+    <span class="k">else</span><span class="o">:</span>
+        <span class="n">pause</span> <span class="o">=</span> <span class="n">True</span>
+</pre></div>
+<p>The first thing we need to have is some sort of check …</p></div>
+        </div>
+        <footer class="post-footer">
+          <a class="readmore" href="/raylib_02.html">Lire la suite...</a>
         </footer>
       </article>
         
@@ -265,89 +315,6 @@ Its interesting as the command line for firing it off is a bit crazy.</p>
         </div>
         <footer class="post-footer">
           <a class="readmore" href="/init_script.html">Lire la suite...</a>
-        </footer>
-      </article>
-        
-      <article class="post">
-        <header class="post-header">
-          <time datetime="2017-04-01T23:50:00+02:00" pubdate="pubdate">
-            Sat 01 April 2017
-          </time>
-          <h1>
-            <a rel="bookmark"
-               href="/lesson_index.html"
-               title="Lien permanent vers «index»">
-               index
-            </a>
-          </h1>
-          <div class="meta">
-              Dans «<a href="/category/py-intro.html">py-intro</a>» 
-              par <a href="/author/ed-rantanen.html">Ed Rantanen</a>
-          </div>
-        </header>
-        <div class="post-content"> 
-          <embed>
-   <br>
-</embed><div class="section" id="a-quick-index">
-<h2>A quick index</h2>
-<blockquote>
-<dl class="docutils">
-<dt><a class="reference external" href="prelim.html">Prelim</a></dt>
-<dd><div class="first last line-block">
-<div class="line">Items we need to get done first, and discussed</div>
-</div>
-</dd>
-</dl>
-</blockquote>
-<hr class="docutils" />
-<blockquote>
-<dl class="docutils">
-<dt><a class="reference external" href="lesson_1.html">Lesson 1</a></dt>
-<dd><div class="first last line-block">
-<div class="line">python shell and some math</div>
-</div>
-</dd>
-</dl>
-</blockquote>
-<hr class="docutils" />
-<blockquote>
-<dl class="docutils">
-<dt><a class="reference external" href="lesson_2.html">Lesson 2</a></dt>
-<dd><div class="first last line-block">
-<div class="line">comments and variables and intro data structures</div>
-</div>
-</dd>
-</dl>
-</blockquote>
-<hr class="docutils" />
-<blockquote>
-<dl class="docutils">
-<dt><a class="reference external" href="lesson_3.html">Lesson 3</a></dt>
-<dd><div class="first last line-block">
-<div class="line">strings and reading/writing to file</div>
-</div>
-</dd>
-</dl>
-</blockquote>
-<hr class="docutils" />
-<blockquote>
-<dl class="docutils">
-<dt><a class="reference external" href="lesson_4.html">Lesson 4</a></dt>
-<dd><div class="first last line-block">
-<div class="line">for loop and while statement</div>
-</div>
-</dd>
-</dl>
-</blockquote>
-<hr class="docutils" />
-<blockquote>
-<dl class="docutils">
-<dt><a class="reference external" href="lesson_5.html">Lesson 5</a></dt>
-<dd><div class="first last line-block">
-<div class="line">getopt and fizz buzz …</div></div></dd></dl></blockquote></div>
-        </div>
-        <footer class="post-footer">
-          <a class="readmore" href="/lesson_index.html">Lire la suite...</a>
         </footer>
       </article>
       <nav id="pagination">   <!-- <span id="first_page" class="a inactive">&#60;&#60;</span>

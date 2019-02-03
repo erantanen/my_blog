@@ -1,5 +1,5 @@
-index
-#####
+raylib-index
+############
 :date: 2019-01-27 22:31
 :author: Ed Rantanen
 :category: raylib
@@ -27,4 +27,9 @@ A quick index
 
  `Lesson 1 <raylib_01.html>`__
         | getting something moving in a basic window
+
+=====
+
+ `Lesson 2 <raylib_02.html>`__
+        | Adding a pause to the environment
 

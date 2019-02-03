@@ -2,25 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aff634c-6f5d-41fb-9d40-42cb22406a62" name="Default" comment="update">
-      <change afterPath="$PROJECT_DIR$/code_snips/basic_window.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_snips/bw_bound_pixel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_snips/bw_mov_pixel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/raylib/raylib_01.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/raylib/raylib_index.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/content/raylib/raylib_intro.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code_snips/bw_bound_pixel_with_pause.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/raylib/raylib_02.rst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_1.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_1.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_10.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_10.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_2.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_2.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_3.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_3.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_4.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_4.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_5.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_5.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_6.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_6.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_7.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_7.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_8.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_8.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_9.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_9.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/py-intro/lesson_index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/lesson_index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/py-intro/prelim.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/py-intro/prelim.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/raylib/raylib_01.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/raylib/raylib_01.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/raylib/raylib_index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/content/raylib/raylib_index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/archives.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/archives.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/author/ed-rantanen.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/author/ed-rantanen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/author/ed-rantanen2.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/author/ed-rantanen2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/author/ed-rantanen3.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/author/ed-rantanen3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/author/ed-rantanen4.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/author/ed-rantanen4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/author/ed-rantanen5.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/author/ed-rantanen5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/authors.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/authors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/categories.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/categories.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/category/raylib.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/category/raylib.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/index3.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/index3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/index4.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/index4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/index5.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/index5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/raylib_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/raylib_01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/raylib_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/raylib_index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,9 +46,10 @@
     <session id="-1176412383">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.24" value="2" />
           <entry key="project.open.time.26" value="1" />
@@ -55,7 +58,7 @@
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -66,8 +69,8 @@
           <entry key="html" value="4" />
           <entry key="init_template" value="1" />
           <entry key="pid" value="1" />
-          <entry key="py" value="8" />
-          <entry key="rst" value="41" />
+          <entry key="py" value="9" />
+          <entry key="rst" value="44" />
           <entry key="sh" value="1" />
         </counts>
       </usages-collector>
@@ -75,49 +78,55 @@
         <counts>
           <entry key="HTML" value="7" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="8" />
-          <entry key="ReST" value="41" />
+          <entry key="Python" value="9" />
+          <entry key="ReST" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="htm" value="94" />
           <entry key="py" value="26" />
-          <entry key="rst" value="4893" />
+          <entry key="rst" value="6867" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="94" />
           <entry key="Python" value="26" />
-          <entry key="ReST" value="4893" />
+          <entry key="ReST" value="6867" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/raylib/raylib_01.rst">
           <provider selected="true" editor-type-id="restructured-text-editor" />
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/content/raylib/raylib_02.rst">
+          <provider selected="true" editor-type-id="restructured-text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code_snips/bw_bound_pixel.py">
+        <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_1.rst">
+          <provider selected="true" editor-type-id="restructured-text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code_snips/bw_bound_pixel_with_pause.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="30" selection-start-line="22" selection-start-column="1" selection-end-line="24" selection-end-column="61" />
+            <state relative-caret-position="195">
+              <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code_snips/bw_mov_pixel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/content/raylib/raylib_index.rst">
+          <provider selected="true" editor-type-id="restructured-text-editor" />
         </entry>
       </file>
     </leaf>
@@ -138,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/code_snips/py_intro_test_1.htm.py" />
         <option value="$PROJECT_DIR$/code_snips/py_intro_test_1.py" />
         <option value="$PROJECT_DIR$/code_snips/an_rec_simple.htm" />
         <option value="$PROJECT_DIR$/theme/dev-random/static/css/main.css" />
@@ -186,15 +194,16 @@
         <option value="$PROJECT_DIR$/content/py-intro/lesson_10.rst" />
         <option value="$PROJECT_DIR$/code_snips/basic_window.py" />
         <option value="$PROJECT_DIR$/code_snips/bw_mov_pixel.py" />
-        <option value="$PROJECT_DIR$/content/raylib/raylib_index.rst" />
         <option value="$PROJECT_DIR$/content/raylib/raylib_intro.rst" />
         <option value="$PROJECT_DIR$/content/raylib/raylib_01.rst" />
+        <option value="$PROJECT_DIR$/content/raylib/raylib_index.rst" />
+        <option value="$PROJECT_DIR$/content/raylib/raylib_02.rst" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="296" />
-    <option name="y" value="23" />
+    <option name="x" value="404" />
+    <option name="y" value="56" />
     <option name="width" value="1434" />
     <option name="height" value="909" />
   </component>
@@ -244,6 +253,12 @@
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="py-intro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
               <item name="raylib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -258,12 +273,12 @@
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content_inprog" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/code_snips" />
       <recent name="$PROJECT_DIR$/content/py-intro" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/content_inprog" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -710,8 +725,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="296" y="23" width="1434" height="909" extended-state="0" />
-    <editor active="true" />
+    <frame x="404" y="56" width="1434" height="909" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15003538" />
       <window_info id="Structure" order="1" weight="0.24984501" />
@@ -761,16 +775,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/content/AdminStuff/about.rst">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code_snips/excel_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code_snips/file_open.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -791,42 +795,42 @@
     <entry file="file://$PROJECT_DIR$/content/AdminStuff/jenkins_pelican" />
     <entry file="file://$PROJECT_DIR$/develop_server.sh" />
     <entry file="file://$PROJECT_DIR$/content_inprog/jenkins_pelican.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="-433">
           <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Makefile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/srv.pid">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/AdminStuff/init_template.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="36" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="128" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/AdminStuff/init_pelican.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="21" selection-end-line="24" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/code_snips/getopt_test.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -860,12 +864,12 @@
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/AdminStuff/bash_example.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/network/ip-header-bit-fields.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
@@ -902,93 +906,80 @@
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_7.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_6.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="383">
           <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_5.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_3.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="98" column="5" selection-start-line="98" selection-end-line="102" selection-end-column="12" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_10.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_9.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state>
           <caret column="9" selection-end-line="45" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/py-intro/prelim.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="33" column="10" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="59" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_1.rst">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_2.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="82">
           <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_4.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="5" selection-start-line="8" selection-end-line="14" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/raylib/index.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/content/raylib/index.rst" />
     <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_index.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="870">
           <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/raylib/raylib_index.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/content/raylib/raylib_intro.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
@@ -1009,12 +1000,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code_snips/bw_bound_pixel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="30" selection-start-line="22" selection-start-column="1" selection-end-line="24" selection-end-column="61" />
+        <state relative-caret-position="225">
+          <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/raylib/raylib_01.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/raylib/raylib_index.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/py-intro/lesson_1.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code_snips/bw_bound_pixel_with_pause.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/raylib/raylib_02.rst">
       <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
   </component>

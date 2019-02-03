@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
         <meta charset="utf-8" />
-    <title>raylib-index — Nyble a Day</title>
+    <title>raylib basic window with a pause — Nyble a Day</title>
     <link rel="stylesheet" type="text/css" href="/theme/css/skeleton.css" />
     <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
     <link rel="shortcut icon" type="text/css" href="/favicon.ico" />
@@ -26,14 +26,14 @@
       <div class="page-content">
      <article class="post content">
       <header class="post-header">
-        <time datetime="2019-01-27T22:31:00+01:00" pubdate="pubdate">
+        <time datetime="2019-01-27T22:28:00+01:00" pubdate="pubdate">
           Sun 27 January 2019
         </time>
         <h1>
           <a rel="bookmark"
-             href="/raylib_index.html"
-             title="Lien permanent vers «raylib-index»">
-             raylib-index
+             href="/raylib_02.html"
+             title="Lien permanent vers «raylib basic window with a pause»">
+             raylib basic window with a pause
           </a>
         </h1>
         <div class="meta">
@@ -44,37 +44,48 @@
       <div class="post-content"> 
         <embed>
    <br>
-</embed><div class="section" id="a-quick-index">
-<h2>A quick index</h2>
+</embed><div class="section" id="putting-in-a-pause">
+<h2>putting in a pause?</h2>
+<p>How do do we put a pause into the graphics?
+The complete pause can be seen here.</p>
 <blockquote>
-<dl class="docutils">
-<dt><a class="reference external" href="raylib_intro.html">Intro</a></dt>
-<dd><div class="first last line-block">
-<div class="line">build a basic window</div>
-</div>
-</dd>
-</dl>
-</blockquote>
-<hr class="docutils" />
+<a class="reference external" href="./code_snips/bw_bound_pixel_with_pause.py">A pause?</a></blockquote>
+<p>The base logic is here.</p>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">is_key_pressed</span><span class="p">(</span><span class="n">KEY_P</span><span class="p">)</span><span class="o">:</span>
+    <span class="k">if</span> <span class="nl">pause</span><span class="p">:</span>
+        <span class="n">pause</span> <span class="o">=</span> <span class="n">False</span>
+    <span class="k">else</span><span class="o">:</span>
+        <span class="n">pause</span> <span class="o">=</span> <span class="n">True</span>
+</pre></div>
+<p>The first thing we need to have is some sort of check to see if a key is pressed?
+And which key we are looking for? These keys can be any combination depending on what
+you are trying to accomplish, if we were in landscape moving along a map we might use the the up/left/right (keys)
+or we might use a combination of w/a/d instead, and if a shooter type of game maybe the space bar or maybe we
+might need a multiplier instead of just walking but shift to run (ie move quicker).
+But to keep this initially simple we are just adding a pause.</p>
+<p>When looking at the above code we are not making a difference of the case?</p>
 <blockquote>
-<dl class="docutils">
-<dt><a class="reference external" href="raylib_01.html">Lesson 1</a></dt>
-<dd><div class="first last line-block">
-<div class="line">getting something moving in a basic window</div>
+<div class="line-block">
+<div class="line">(lower/upper case)</div>
 </div>
-</dd>
-</dl>
 </blockquote>
-<hr class="docutils" />
+<p>If you have pulled the code, give it a try with both upper and lower case &quot;p&quot; it will re-act the same.</p>
+<p>Before we can use &quot;if pause:&quot; the variable will need to be set outside of the while loop and its done with
+&quot; pause = False &quot; This kind of statement gets into the concept of Boolean for further reading look at the link
+below.</p>
 <blockquote>
-<dl class="docutils">
-<dt><a class="reference external" href="raylib_02.html">Lesson 2</a></dt>
-<dd><div class="first last line-block">
-<div class="line">Adding a pause to the environment</div>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://www.codesdope.com/python-boolean/">An in-depth look at python boolean</a></div>
 </div>
-</dd>
-</dl>
 </blockquote>
+<p>Now that the check has been accomplised, we can can then move onto using that check with</p>
+<div class="highlight"><pre><span></span><span class="cp"># checking if in pause state</span>
+ <span class="k">if</span> <span class="n">pause</span> <span class="n">is</span> <span class="nl">False</span><span class="p">:</span>
+</pre></div>
+<p>What this will do is by pass the code block with in the if-statement where everything is drawn/updated.
+And the effect of the key press will be?</p>
+<p>Now that you have a basic key press, you can go on to try other things with this little bit of code, also
+how might we move the draw circle along faster with a key press?</p>
 </div>
 
       </div>

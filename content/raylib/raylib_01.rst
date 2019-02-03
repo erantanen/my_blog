@@ -1,5 +1,5 @@
-raylib basic window with item moving
-####################################
+raylibib basic window with item moving
+######################################
 :date: 2019-01-27 22:29
 :author: Ed Rantanen
 :category: raylib
